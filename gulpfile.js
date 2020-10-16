@@ -19,7 +19,7 @@ var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
 
 gulp.task("css", function () {
-  return gulp.src("source/sass/style.sass")
+  return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -97,7 +97,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.sass", gulp.series("css"));
+  gulp.watch("source/sass/**/*.scss", gulp.series("css"));
   gulp.watch("source/*.html", gulp.series("html")).on("change", server.reload);
 });
 

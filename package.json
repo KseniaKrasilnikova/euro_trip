@@ -20,14 +20,15 @@
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
     "posthtml-include": "^1.4.3",
-    "stylelint": "13.5.x"
+    "stylelint": "13.5.x",
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp start",
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.sass\" --syntax sass"
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss"
   },
   "browserslist": [
     "last 2 versions",
@@ -40,7 +41,7 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/sass/**/*.sass"
+    "source/sass/**/*.scss"
   ],
   "engines": {
     "node": "8.16"
@@ -48,4 +49,3 @@
   "author": "Ksenia Krasilnikova",
   "license": "ISC"
 }
-
