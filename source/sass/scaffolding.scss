@@ -19,6 +19,12 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   clip: rect(0 0 0 0);
