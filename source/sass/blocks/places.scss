@@ -1,10 +1,8 @@
-.places {
-  width: 1150px;
-  margin: 0 auto;
-}
 .places-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .places-list__item {
@@ -21,5 +19,13 @@
 
   width: 215px;
   height: 61px;
-  background-color: orange;
+  background-color: white;
+  margin: -61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.places-list__item--frame {
+  padding: 0 59px 164px 60px;
 }
