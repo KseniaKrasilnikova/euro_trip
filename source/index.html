@@ -76,8 +76,32 @@
                     <a class="places-list__link">Хорватия</a>
                 </li>
             </ul>
+    </section>
+    <section class="tabs">
+        <h2 class="visually-hidden">Подробнее о туре</h2>
+        <div class="tab">
+            <button onclick="openCountry(event, 'greece')" class="tab__links">Греция</button>
+            <button onclick="openCountry(event, 'albania')" class="tab__links">Албания</button>
+            <button onclick="openCountry(event, 'macedonia')" class="tab__links">Македония</button>
+        </div>
+
+        <!-- Контент вкладок -->
+        <div id="greece" class="tab-content">
+            <h3>Греция</h3>
+            <p>London is the capital city of England.</p>
+        </div>
+        <div id="albania" class="tab-content">
+            <h3>Албания</h3>
+            <p>London is the capital city of England.</p>
+        </div>
+        <div id="macedonia" class="tab-content">
+            <h3>Македония</h3>
+            <p>London is the capital city of England.</p>
+        </div>
 
     </section>
 </main>
+<script src="js/script.js" type="text/javascript"></script>
+
 </body>
 </html>
