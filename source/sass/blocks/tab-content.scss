@@ -1,0 +1,57 @@
+.tab-content {
+  display: none;
+  padding: 6px 12px;
+  border: none;
+  background-image: url("../img/map.png");
+  min-height: 1089px;
+  flex-direction: row;
+}
+
+.tab-content__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-content__title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  letter-spacing: -1.25px;
+  margin: 0;
+}
+
+.tab-content__rectangle {
+  width: 175px;
+  height: 3px;
+  background-color: #fe7865;
+}
+
+.tab-content__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.47px;
+  margin: 0;
+  color: rgba(44, 46, 65, 0.7);
+}
+
+.tab-content__btn {
+  width: 250px;
+  height: 75px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  border: 0;
+  background-color: #FE7865;
+  cursor: pointer;
+}
+
+.tab-content__review {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}

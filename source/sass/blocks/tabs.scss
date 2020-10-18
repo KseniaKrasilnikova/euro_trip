@@ -1,6 +1,7 @@
-.tab {
+.tabs {
   overflow: hidden;
   border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+  width: 899px;
 }
 
 .tab__links {
@@ -18,7 +19,7 @@
   letter-spacing: -0.41px;
 }
 
-.tab button:hover {
+.tabs button:hover {
   color: #FE7865;
 }
 

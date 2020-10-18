@@ -1,5 +1,4 @@
 function openCountry(evt, countryName) {
-    // Объявить все переменные
     var i, tabcontent, tablinks;
 
     // Получить все элементы с class="tab-content" и скрыть их
@@ -15,6 +14,8 @@ function openCountry(evt, countryName) {
     }
 
     // Показать текущую вкладку и добавить "active" класс для кнопки, открывшей вкладку
-    document.getElementById(countryName).style.display = "block";
+    document.getElementById(countryName).style.display = "flex";
     evt.currentTarget.className += " tab__links--active";
 }
+
+document.getElementById("defaultOpen").click();

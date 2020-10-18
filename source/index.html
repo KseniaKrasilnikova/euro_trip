@@ -54,49 +54,69 @@
             <div class="places__rectangle"></div>
             <p class="places__instruction">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
         </div>
-            <ul  class="places-list">
-                <li class="places-list__item">
-                    <img src="img/greece.jpg" alt="Греция" width="350" height="430">
-                    <a class="places-list__link">Греция</a>
-                </li>
-                <li class="places-list__item places-list__item--frame">
-                    <img src="img/albania.jpg" alt="Албания" width="350" height="430">
-                    <a class="places-list__link">Албания</a>
-                </li>
-                <li class="places-list__item">
-                    <img src="img/macedonia.jpg" alt="Македония" width="350" height="430">
-                    <a class="places-list__link">Македония</a>
-                </li>
-                <li class="places-list__item places-list__item--frame">
-                    <img src="img/montenegro.jpg" alt="Черногория" width="350" height="430">
-                    <a class="places-list__link">Черногория</a>
-                </li>
-                <li class="places-list__item places-list__item--frame">
-                    <img src="img/croatia.jpg" alt="Хорватия" width="350" height="430">
-                    <a class="places-list__link">Хорватия</a>
-                </li>
-            </ul>
+        <ul class="places-list">
+            <li class="places-list__item">
+                <img src="img/greece.jpg" alt="Греция" width="350" height="430">
+                <a class="places-list__link">Греция</a>
+            </li>
+            <li class="places-list__item places-list__item--frame">
+                <img src="img/albania.jpg" alt="Албания" width="350" height="430">
+                <a class="places-list__link">Албания</a>
+            </li>
+            <li class="places-list__item">
+                <img src="img/macedonia.jpg" alt="Македония" width="350" height="430">
+                <a class="places-list__link">Македония</a>
+            </li>
+            <li class="places-list__item places-list__item--frame">
+                <img src="img/montenegro.jpg" alt="Черногория" width="350" height="430">
+                <a class="places-list__link">Черногория</a>
+            </li>
+            <li class="places-list__item places-list__item--frame">
+                <img src="img/croatia.jpg" alt="Хорватия" width="350" height="430">
+                <a class="places-list__link">Хорватия</a>
+            </li>
+        </ul>
     </section>
-    <section class="tabs">
+    <section class="tab">
         <h2 class="visually-hidden">Подробнее о туре</h2>
-        <div class="tab">
-            <button onclick="openCountry(event, 'greece')" class="tab__links">Греция</button>
+        <div class="tabs">
+            <button onclick="openCountry(event, 'greece')" class="tab__links tab__links--active" id="defaultOpen">Греция</button>
             <button onclick="openCountry(event, 'albania')" class="tab__links">Албания</button>
             <button onclick="openCountry(event, 'macedonia')" class="tab__links">Македония</button>
+            <button onclick="openCountry(event, 'montenegro')" class="tab__links">Черногория</button>
+            <button onclick="openCountry(event, 'croatia')" class="tab__links">Хорватия</button>
         </div>
 
         <!-- Контент вкладок -->
         <div id="greece" class="tab-content">
-            <h3>Греция</h3>
-            <p>London is the capital city of England.</p>
+            <div class="tab-content__info">
+                <h3 class="tab-content__title">Греция</h3>
+                <div class="tab-content__rectangle"></div>
+                <p class="tab-content__description">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в ». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
+                <button class="tab-content__btn">Купить тур сейчас</button>
+            </div>
+            <div class="tab-content__review review">
+                <img src="img/greece.jpg" alt="Греция" width="430" height="596">
+                <div class="review__text">
+                    <h3 class="review__title">Отзывы</h3>
+                    <div class="review__rectangle"></div>
+                    <p class="review__description">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
+                    <div class="review__author">
+                        <img src="img/avatar.jpg" alt="avatar" width="37.19" height="38">
+                        <p class="review__name">Влада Голицина</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="albania" class="tab-content">
-            <h3>Албания</h3>
-            <p>London is the capital city of England.</p>
+            <h3 class="tab-content__title">Албания</h3>
+            <div class="tab-content__rectangle"></div>
+            <p class="tab-content__description">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.</p>
         </div>
         <div id="macedonia" class="tab-content">
-            <h3>Македония</h3>
-            <p>London is the capital city of England.</p>
+            <h3 class="tab-content__title">Македония</h3>
+            <div class="tab-content__rectangle"></div>
+            <p class="tab-content__description">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится археологический памятник Кокино в длину около 100 метров.</p>
         </div>
 
     </section>
