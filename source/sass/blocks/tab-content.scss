@@ -10,6 +10,9 @@
 .tab-content__info {
   display: flex;
   flex-direction: column;
+
+  width: 23.31%;
+  margin: 0 139px 0 0;
 }
 
 .tab-content__title {
@@ -54,4 +57,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+
+.tab-content__pic {
+  width: 430px;
+  height: 596px;
 }
