@@ -1,28 +1,32 @@
 .tabs {
   overflow: hidden;
-  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
-  width: 899px;
 }
 
-.tab__links {
+.tabs__rectangle {
+  background-color: rgba(44, 46, 63, 0.3);
+  width: 899px;
+  height: 1px;
+  }
+
+.tabs__links {
   background-color: inherit;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 19px 96px 13px 1px;
 
   color: rgba(44, 46, 63, 0.3);
   font-weight: 500;
   font-size: 20px;
   line-height: 24.38px;
-  letter-spacing: -0.41px;
+  letter-spacing: 1.59px;
 }
 
 .tabs button:hover {
   color: #FE7865;
 }
 
-.tab__links--active {
+.tabs__links--active {
   color: #FE7865;
 }

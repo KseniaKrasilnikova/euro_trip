@@ -7,15 +7,15 @@ function openCountry(evt, countryName) {
         tabcontent[i].style.display = "none";
     }
 
-    // Получить все элементы с class="tab__links" и удалить class "active"
-    tablinks = document.getElementsByClassName("tab__links");
+    // Получить все элементы с class="tabs__links" и удалить class "active"
+    tablinks = document.getElementsByClassName("tabs__links");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" tab__links--active", "");
+        tablinks[i].className = tablinks[i].className.replace(" tabs__links--active", "");
     }
 
     // Показать текущую вкладку и добавить "active" класс для кнопки, открывшей вкладку
     document.getElementById(countryName).style.display = "flex";
-    evt.currentTarget.className += " tab__links--active";
+    evt.currentTarget.className += " tabs__links--active";
 }
 
 document.getElementById("defaultOpen").click();

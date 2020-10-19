@@ -78,15 +78,16 @@
             </li>
         </ul>
     </section>
-    <section class="trips">
+    <section class="trips container">
         <h2 class="visually-hidden">Подробнее о туре</h2>
         <div class="tabs">
-            <button onclick="openCountry(event, 'greece')" class="tab__links tab__links--active" id="defaultOpen">Греция</button>
-            <button onclick="openCountry(event, 'albania')" class="tab__links">Албания</button>
-            <button onclick="openCountry(event, 'macedonia')" class="tab__links">Македония</button>
-            <button onclick="openCountry(event, 'montenegro')" class="tab__links">Черногория</button>
-            <button onclick="openCountry(event, 'croatia')" class="tab__links">Хорватия</button>
+            <button onclick="openCountry(event, 'greece')" class="tabs__links tabs__links--active" id="defaultOpen">Греция</button>
+            <button onclick="openCountry(event, 'albania')" class="tabs__links">Албания</button>
+            <button onclick="openCountry(event, 'macedonia')" class="tabs__links">Македония</button>
+            <button onclick="openCountry(event, 'montenegro')" class="tabs__links">Черногория</button>
+            <button onclick="openCountry(event, 'croatia')" class="tabs__links">Хорватия</button>
         </div>
+        <div class="tabs__rectangle"></div>
 
         <!-- Контент вкладок -->
         <div id="greece" class="tab-content">
