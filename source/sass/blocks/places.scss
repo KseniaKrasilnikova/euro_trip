@@ -1,14 +1,23 @@
+.places {
+  margin-top: 199px;
+}
+
 .places-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+ justify-content: center;
 }
 
 .places-list__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 24px 0 136px 0;
+}
+
+.places-list__item--frame {
+  padding: 0 55px;
 }
 
 .places-list__link {
@@ -24,10 +33,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.places-list__item--frame {
-  padding: 0 59px 164px 60px;
 }
 
 .places__rectangle {
@@ -60,4 +65,8 @@
   letter-spacing: -0.47px;
   text-align: left;
   color: rgba(44, 46, 65, 0.7);
+}
+
+.places-list__pic {
+  height: 426px;
 }
