@@ -2,39 +2,6 @@
   margin-top: 199px;
 }
 
-.places-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
- justify-content: center;
-}
-
-.places-list__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 24px 0 136px 0;
-}
-
-.places-list__item--frame {
-  padding: 0 55px;
-}
-
-.places-list__link {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-
-  width: 215px;
-  height: 61px;
-  background-color: white;
-  margin: -61px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .places__rectangle {
   width: 228.5px;
   height: 4px;
@@ -57,7 +24,7 @@
 }
 
 .places__instruction {
-  margin: 30px 0;
+  margin: 32px 0;
 
   font-weight: 400;
   font-size: 16px;
@@ -65,8 +32,4 @@
   letter-spacing: -0.47px;
   text-align: left;
   color: rgba(44, 46, 65, 0.7);
-}
-
-.places-list__pic {
-  height: 426px;
 }
