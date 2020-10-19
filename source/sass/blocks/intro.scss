@@ -1,22 +1,16 @@
-.intro {
-
-}
-
 .intro__bg {
   background-image: url("../img/bg-back-desktop.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 860px;
+  min-height: 862px;
 }
 
 .intro__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 58.4%;
-  margin-right: 20%;
-  padding-top: 191px;
+  margin-left: 67%;
+  margin-right: 10%;
+  padding-top: 188px;
 }
 
 .intro__title,
@@ -31,6 +25,7 @@
   line-height: 80px;
   letter-spacing: -1.10667px;
   color: white;
+  padding-bottom: 27px;
 }
 
 .intro__description {
@@ -39,17 +34,19 @@
   line-height: 27px;
   letter-spacing: -0.466667px;
   color: white;
+  padding-bottom: 34px;
 }
 
 .intro__button {
-  width: 340px;
-  height: 75px;
+  width: 339px;
+  height: 74px;
   font-size: 12px;
   line-height: 15px;
   font-weight: 700;
   text-transform: uppercase;
   color: white;
   text-align: left;
+  letter-spacing: 2px;
   border: 0;
   background-color: #FE7865;
   cursor: pointer;
@@ -57,4 +54,10 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  padding: 39px 36px 36px 42px;
+}
+
+.intro__arrow {
+  margin-left: 120px;
 }

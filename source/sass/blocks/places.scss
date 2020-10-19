@@ -35,3 +35,30 @@
   height: 4px;
   background-color: #fe7865;
 }
+
+.places__header {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.25px;
+  text-align: left;
+
+  margin: 0;
+  padding-bottom: 28px;
+}
+
+.places__title {
+  width: 328px;
+  margin: 198px 371px 0;
+}
+
+.places__instruction {
+  margin: 30px 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.47px;
+  text-align: left;
+  color: rgba(44, 46, 65, 0.7);
+}
