@@ -1,0 +1,79 @@
+.prices {
+  width: 370px;
+  height: 672px;
+  border: 1px solid rgba(35, 37, 50, 0.3);
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 37px 30px 30px;
+}
+
+.prices__header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  padding-bottom: 39px;
+}
+
+.prices__name {
+  color: rgba(20, 21, 23, 0.7);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: left;
+  margin: 0;
+}
+
+.prices__sum {
+  color: rgba(20, 21, 23, 0.7);
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: right;
+}
+
+.prices__meet {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  margin: 0;
+  width: 90%;
+  align-self: flex-start;
+}
+
+.prices__rect {
+  background-color: rgba(44, 46, 63, 0.3);
+  width: 310px;
+  height: 1px;
+  margin: 0;
+}
+
+.prices__items {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: left;
+}
+
+.prices__btn {
+  width: 310px;
+  height: 75px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  border: 0;
+  background-color: #FE7865;
+  cursor: pointer;
+}
