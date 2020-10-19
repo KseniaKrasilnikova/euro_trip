@@ -83,142 +83,153 @@
     </section>
     <section class="trips container">
         <h2 class="visually-hidden">Подробнее о туре</h2>
-        <div class="tabs">
-            <button onclick="openCountry(event, 'greece')" class="tabs__links tabs__links--active" id="defaultOpen">
-                Греция
-            </button>
-            <button onclick="openCountry(event, 'albania')" class="tabs__links">Албания</button>
-            <button onclick="openCountry(event, 'macedonia')" class="tabs__links">Македония</button>
-            <button onclick="openCountry(event, 'montenegro')" class="tabs__links">Черногория</button>
-            <button onclick="openCountry(event, 'croatia')" class="tabs__links">Хорватия</button>
-        </div>
-        <div class="trips__rectangle"></div>
-
-        <!-- Контент вкладок -->
-        <div id="greece" class="tab-content">
-            <div class="tab-content__info">
-                <h3 class="tab-content__title">Греция</h3>
-                <div class="tab-content__rectangle"></div>
-                <p class="tab-content__description">На севере Греции находится один из крупнейших комплексов монастырей,
-                    расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в
-                    воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покорения скал из
-                    песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая
-                    красота природы и атмосфера, царящая в монастырях Метеоры. </p>
-                <button class="tab-content__btn">Купить тур сейчас</button>
+        <div class="trips__bg">
+            <div class="tabs">
+                <button onclick="openCountry(event, 'greece')" class="tabs__links tabs__links--active" id="defaultOpen">
+                    Греция
+                </button>
+                <button onclick="openCountry(event, 'albania')" class="tabs__links">Албания</button>
+                <button onclick="openCountry(event, 'macedonia')" class="tabs__links">Македония</button>
+                <button onclick="openCountry(event, 'montenegro')" class="tabs__links">Черногория</button>
+                <button onclick="openCountry(event, 'croatia')" class="tabs__links">Хорватия</button>
             </div>
-            <img class="tab-content__pic" src="img/greece-review.jpg" alt="Греция" width="430" height="596">
-            <div class="tab-content__review review">
-                <div class="review__text">
-                    <h4 class="review__title">Отзывы</h4>
-                    <div class="review__rectangle"></div>
-                    <p class="review__description">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
-                        Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах.
-                        Ощущение такое, как будто стоишь на краю света!</p>
-                    <div class="review__author">
-                        <img src="img/avatar.jpg" alt="avatar" width="37.19" height="38">
-                        <p class="review__name">Влада Голицина</p>
+            <div class="trips__rectangle"></div>
+
+            <!-- Контент вкладок -->
+            <div id="greece" class="tab-content">
+                <div class="tab-content__info">
+                    <h3 class="tab-content__title">Греция</h3>
+                    <div class="tab-content__rectangle"></div>
+                    <p class="tab-content__description">На севере Греции находится один из крупнейших комплексов
+                        монастырей,
+                        расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в
+                        воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покорения скал из
+                        песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет
+                        неописуемая
+                        красота природы и атмосфера, царящая в монастырях Метеоры. </p>
+                    <button class="tab-content__btn">Купить тур сейчас</button>
+                </div>
+                <img class="tab-content__pic" src="img/greece-review.jpg" alt="Греция" width="430" height="596">
+                <div class="tab-content__review review">
+                    <div class="review__text">
+                        <h4 class="review__title">Отзывы</h4>
+                        <div class="review__rectangle"></div>
+                        <p class="review__description">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+                            Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах.
+                            Ощущение такое, как будто стоишь на краю света!</p>
+                        <div class="review__author">
+                            <img src="img/avatar.jpg" alt="avatar" width="37.19" height="38">
+                            <p class="review__name">Влада Голицина</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-
-        <div id="albania" class="tab-content">
-            <div class="tab-content__info">
-                <h3 class="tab-content__title">Албания</h3>
-                <div class="tab-content__rectangle"></div>
-                <p class="tab-content__description">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас
-                    чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда
-                    невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не
-                    песок, а камни, перетёртые до такого мелкого состояния. </p>
-                <button class="tab-content__btn">Купить тур сейчас</button>
-            </div>
-            <img class="tab-content__pic" src="img/albania-review.jpg" alt="Греция" width="430" height="596">
-            <div class="tab-content__review review">
-                <div class="review__text">
-                    <h4 class="review__title">Отзывы</h4>
-                    <div class="review__rectangle"></div>
-                    <p class="review__description">Замечательный курорт, обязательно стоит посетить. В следующий раз
-                        возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
-                    <div class="review__author">
-                        <img src="img/avatar-marishka.jpg" alt="avatar" width="37.19" height="38">
-                        <p class="review__name">Маришка</p>
+            <div id="albania" class="tab-content">
+                <div class="tab-content__info">
+                    <h3 class="tab-content__title">Албания</h3>
+                    <div class="tab-content__rectangle"></div>
+                    <p class="tab-content__description">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас
+                        чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный,
+                        правда
+                        невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не
+                        песок, а камни, перетёртые до такого мелкого состояния. </p>
+                    <button class="tab-content__btn">Купить тур сейчас</button>
+                </div>
+                <img class="tab-content__pic" src="img/albania-review.jpg" alt="Греция" width="430" height="596">
+                <div class="tab-content__review review">
+                    <div class="review__text">
+                        <h4 class="review__title">Отзывы</h4>
+                        <div class="review__rectangle"></div>
+                        <p class="review__description">Замечательный курорт, обязательно стоит посетить. В следующий раз
+                            возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
+                        <div class="review__author">
+                            <img src="img/avatar-marishka.jpg" alt="avatar" width="37.19" height="38">
+                            <p class="review__name">Маришка</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div id="macedonia" class="tab-content">
-            <div class="tab-content__info">
-                <h3 class="tab-content__title">Македония</h3>
-                <div class="tab-content__rectangle"></div>
-                <p class="tab-content__description">В Македонии нашей целью будет посетить Палаошник, который
-                    расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни.
-                    А также мы заберемся на вершину горы Татичев Камен где находится археологический памятник Кокино в
-                    длину около 100 метров.</p>
-                <button class="tab-content__btn">Купить тур сейчас</button>
-            </div>
-            <img class="tab-content__pic" src="img/macedonia-review.jpg" alt="Греция" width="430" height="596">
-            <div class="tab-content__review review">
-                <div class="review__text">
-                    <h4 class="review__title">Отзывы</h4>
-                    <div class="review__rectangle"></div>
-                    <p class="review__description">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь,
-                        но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы
-                        впечатлила, особенно после долгого пути в гору.</p>
-                    <div class="review__author">
-                        <img src="img/avatar-mikhkuz.jpg" alt="avatar" width="37.19" height="38">
-                        <p class="review__name">Михаил Кузьмин</p>
+            <div id="macedonia" class="tab-content">
+                <div class="tab-content__info">
+                    <h3 class="tab-content__title">Македония</h3>
+                    <div class="tab-content__rectangle"></div>
+                    <p class="tab-content__description">В Македонии нашей целью будет посетить Палаошник, который
+                        расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой
+                        твердыни.
+                        А также мы заберемся на вершину горы Татичев Камен где находится археологический памятник Кокино
+                        в
+                        длину около 100 метров.</p>
+                    <button class="tab-content__btn">Купить тур сейчас</button>
+                </div>
+                <img class="tab-content__pic" src="img/macedonia-review.jpg" alt="Греция" width="430" height="596">
+                <div class="tab-content__review review">
+                    <div class="review__text">
+                        <h4 class="review__title">Отзывы</h4>
+                        <div class="review__rectangle"></div>
+                        <p class="review__description">Я бы сказал необычное старое здание. В архитектуре я не
+                            разбираюсь,
+                            но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота
+                            природы
+                            впечатлила, особенно после долгого пути в гору.</p>
+                        <div class="review__author">
+                            <img src="img/avatar-mikhkuz.jpg" alt="avatar" width="37.19" height="38">
+                            <p class="review__name">Михаил Кузьмин</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div id="montenegro" class="tab-content">
-            <div class="tab-content__info">
-                <h3 class="tab-content__title">Черногория</h3>
-                <div class="tab-content__rectangle"></div>
-                <p class="tab-content__description">Черногория удивит нас самым большим в Европе каньоном реки Тара,
-                    который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При
-                    этом длина каньона составляет 80 км.</p>
-                <button class="tab-content__btn">Купить тур сейчас</button>
-            </div>
-            <img class="tab-content__pic" src="img/macedonia-review.jpg" alt="Греция" width="430" height="596">
-            <div class="tab-content__review review">
-                <div class="review__text">
-                    <h4 class="review__title">Отзывы</h4>
-                    <div class="review__rectangle"></div>
-                    <p class="review__description">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела,
-                        разве что в фильмах :) Всем советую.</p>
-                    <div class="review__author">
-                        <img src="img/avatar-mei.jpg" alt="avatar" width="37.19" height="38">
-                        <p class="review__name">Анастасия Мей</p>
+            <div id="montenegro" class="tab-content">
+                <div class="tab-content__info">
+                    <h3 class="tab-content__title">Черногория</h3>
+                    <div class="tab-content__rectangle"></div>
+                    <p class="tab-content__description">Черногория удивит нас самым большим в Европе каньоном реки Тара,
+                        который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех.
+                        При
+                        этом длина каньона составляет 80 км.</p>
+                    <button class="tab-content__btn">Купить тур сейчас</button>
+                </div>
+                <img class="tab-content__pic" src="img/macedonia-review.jpg" alt="Греция" width="430" height="596">
+                <div class="tab-content__review review">
+                    <div class="review__text">
+                        <h4 class="review__title">Отзывы</h4>
+                        <div class="review__rectangle"></div>
+                        <p class="review__description">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела,
+                            разве что в фильмах :) Всем советую.</p>
+                        <div class="review__author">
+                            <img src="img/avatar-mei.jpg" alt="avatar" width="37.19" height="38">
+                            <p class="review__name">Анастасия Мей</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div id="croatia" class="tab-content">
-            <div class="tab-content__info">
-                <h3 class="tab-content__title">Хорватия</h3>
-                <div class="tab-content__rectangle"></div>
-                <p class="tab-content__description">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее
-                    подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных
-                    удивительными нерукотворными скульптурами — сталактитами и сталагмитами — формировавшимися тысячи и
-                    тысячи лет.</p>
-                <button class="tab-content__btn">Купить тур сейчас</button>
-            </div>
-            <img class="tab-content__pic" src="img/macedonia-review.jpg" alt="Греция" width="430" height="596">
-            <div class="tab-content__review review">
-                <div class="review__text">
-                    <h4 class="review__title">Отзывы</h4>
-                    <div class="review__rectangle"></div>
-                    <p class="review__description">Мы поехали всей семьей, я, моя жена и родители. Пещера просто
-                        незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не
-                        верилось, но натур ни с чем не спутать по итогу :)</p>
-                    <div class="review__author">
-                        <img src="img/avatar-mul.jpg" alt="avatar" width="37.19" height="38">
-                        <p class="review__name">Владимир Мулицин</p>
+            <div id="croatia" class="tab-content">
+                <div class="tab-content__info">
+                    <h3 class="tab-content__title">Хорватия</h3>
+                    <div class="tab-content__rectangle"></div>
+                    <p class="tab-content__description">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее
+                        подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных
+                        удивительными нерукотворными скульптурами — сталактитами и сталагмитами — формировавшимися
+                        тысячи и
+                        тысячи лет.</p>
+                    <button class="tab-content__btn">Купить тур сейчас</button>
+                </div>
+                <img class="tab-content__pic" src="img/macedonia-review.jpg" alt="Греция" width="430" height="596">
+                <div class="tab-content__review review">
+                    <div class="review__text">
+                        <h4 class="review__title">Отзывы</h4>
+                        <div class="review__rectangle"></div>
+                        <p class="review__description">Мы поехали всей семьей, я, моя жена и родители. Пещера просто
+                            незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально
+                            даже не
+                            верилось, но натур ни с чем не спутать по итогу :)</p>
+                        <div class="review__author">
+                            <img src="img/avatar-mul.jpg" alt="avatar" width="37.19" height="38">
+                            <p class="review__name">Владимир Мулицин</p>
+                        </div>
                     </div>
                 </div>
             </div>
