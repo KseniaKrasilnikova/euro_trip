@@ -1,0 +1,62 @@
+.prices-about {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 672px;
+  margin-left: 80px;
+}
+
+.prices-about__rect {
+  background-color: #fe7865;
+  width: 175px;
+  height: 3px;
+}
+
+.prices-about__title {
+  color: #2C2E3F;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  text-align: left;
+  margin: 0;
+}
+
+.prices-about__text {
+  color: rgba(20, 21, 23, 0.7);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  text-align: left;
+  margin: 0;
+  width: 299px;
+}
+
+.prices-about__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prices-about__phone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.prices-about__connect {
+  color: #141517;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: left;
+  margin: 0;
+}
+
+.prices-about__numbers {
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+  margin: 0;
+}
