@@ -1,0 +1,69 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: white;
+  width: 656px;
+  height: 315px;
+  box-shadow: 4px 4px 8px -2px rgba(128, 128, 128, 0.3);
+}
+
+.form__title {
+  margin: 50px 0 0 0;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+  color: #141517;
+}
+
+.form__text {
+  margin: 13px 0 22px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #141517;
+}
+
+.form__btn {
+  width: 176px;
+  height: 50px;
+  margin-top: 25px;
+}
+
+.form__icon {
+  position: absolute;
+  padding: 6.25px 0 0 15px;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: row;
+}
+
+.form__code {
+  position: absolute;
+  padding: 12px 0 0 26px;
+  font-size: 14px;
+}
+
+
+.form__input {
+  height: 50px;
+  width: 269px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid rgba(44, 46, 63, 0.3);
+}
+
+#phone {
+  padding-left: 51px;
+  margin-right: 19px;
+}
+
+#mail {
+  padding-left: 15px;
+}
