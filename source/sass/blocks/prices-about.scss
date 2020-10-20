@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 370px;
-  height: 672px;
+  height: 448px;
   margin-left: 80px;
 }
 
@@ -10,6 +10,8 @@
   background-color: #fe7865;
   width: 175px;
   height: 3px;
+  margin-top: 15px;
+  margin-bottom: 33px;
 }
 
 .prices-about__title {
@@ -27,20 +29,22 @@
   font-size: 16px;
   line-height: 27.2px;
   text-align: left;
-  margin: 0;
+  margin: 0 0 38px;
   width: 299px;
 }
 
 .prices-about__contacts {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  width: 299px;
 }
 
 .prices-about__phone {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  margin-left: 17px;
 }
 
 .prices-about__connect {
@@ -49,7 +53,7 @@
   font-size: 22px;
   line-height: 34px;
   text-align: left;
-  margin: 0;
+margin-bottom: 13px;
 }
 
 .prices-about__numbers {
