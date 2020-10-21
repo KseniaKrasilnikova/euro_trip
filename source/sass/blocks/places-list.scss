@@ -22,10 +22,8 @@
 .places-list__mask {
   display: none;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(20, 21, 23, 0.6);
 }
 
@@ -38,13 +36,31 @@
   height: 430px;
 }
 
-.places-list__a:hover .places-list__mask {
-  display: block;
+.places-list__details {
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17.07px;
+  text-align: center;
+  background-color: transparent;
+}
+.places-list__frame {
+  width: 266px;
+  height: 77px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-
+.places-list__a:hover .places-list__mask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .places-list__item--frame {
   padding: 0 60px;
