@@ -27,7 +27,7 @@
   background-color: rgba(20, 21, 23, 0.6);
 }
 
-.places-list__a {
+.places-list__link {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -56,7 +56,7 @@
   align-items: center;
 }
 
-.places-list__a:hover .places-list__mask {
+.places-list__link:hover .places-list__mask {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@
   margin-bottom: 100px;
 }
 
-.places-list__link {
+.places-list__text {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
