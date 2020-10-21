@@ -16,10 +16,10 @@
         <div class="main-nav__wrapper">
             <ul class="main-nav__list nav-list">
                 <li class="nav-list__item">
-                    <a href="#">О путешествии</a>
+                    <a href="#places-to-visit">О путешествии</a>
                 </li>
                 <li class="nav-list__item">
-                    <a href="#">Цены</a>
+                    <a href="#prices">Цены</a>
                 </li>
             </ul>
         </div>
@@ -46,44 +46,58 @@
                 <h3 class="intro__title">Путешествие по Европе</h3>
                 <p class="intro__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море,
                     горы, а также потрясающая красота природы.</p>
-                <button class="intro__button btn">смотреть тур
+                <button class="intro__button btn"><a href="#trips" class="btn">смотреть тур
                     <img class="intro__arrow" src="img/arrow-right.png" alt="смотреть тур" width="16" height="16">
-                </button>
+                </a></button>
             </div>
         </div>
     </section>
     <section class="places container">
         <div class="places__title">
-            <h2 class="places__header">Места посещения</h2>
+            <h2 class="places__header" id="places-to-visit">Места посещения</h2>
             <div class="places__rectangle"></div>
             <p class="places__instruction">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
         </div>
         <ul class="places-list">
             <li class="places-list__item">
-                <img class="places-list__pic" src="img/greece.jpg" alt="Греция" width="350" height="430">
-                <a class="places-list__link">Греция</a>
+                <a href="#greece" class="places-list__a">
+                    <img class="places-list__pic" src="img/greece.jpg" alt="Греция" width="350" height="430">
+                    <div class="places-list__mask"></div>
+                    <div class="places-list__link">Греция</div>
+                </a>
             </li>
             <li class="places-list__item places-list__item--frame places-list__item--bottom">
-                <img class="places-list__pic" src="img/albania.jpg" alt="Албания" width="350" height="430">
-                <a class="places-list__link">Албания</a>
+                <a href="#albania" class="places-list__a" onclick="openCountry(event, 'albania')">
+                    <img class="places-list__pic" src="img/albania.jpg" alt="Албания" width="350" height="430">
+                    <div class="places-list__mask"></div>
+                    <div class="places-list__link">Албания</div>
+                </a>
             </li>
             <li class="places-list__item">
-                <img class="places-list__pic" src="img/macedonia.jpg" alt="Македония" width="350" height="430">
-                <a class="places-list__link">Македония</a>
+                <a href="#macedonia" class="places-list__a" onclick="openCountry(event, 'macedonia')">
+                    <img class="places-list__pic" src="img/macedonia.jpg" alt="Македония" width="350" height="430">
+                    <div class="places-list__mask"></div>
+                    <div class="places-list__link">Македония</div>
+                </a>
             </li>
             <li class="places-list__item places-list__item--frame">
-                <img src="img/montenegro.jpg" alt="Черногория" width="350" height="430">
-                <a class="places-list__link">Черногория</a>
+                <a href="#montenegro" class="places-list__a" onclick="openCountry(event, 'montenegro')">
+                    <img src="img/montenegro.jpg" alt="Черногория" width="350" height="430">
+                    <div class="places-list__mask"></div>
+                    <div class="places-list__link">Черногория</div>
+                </a>
             </li>
             <li class="places-list__item places-list__item--frame">
-                <img src="img/croatia.jpg" alt="Хорватия" width="350" height="430">
-                <a class="places-list__link">Хорватия</a>
+                <a href="#croatia" class="places-list__a" onclick="openCountry(event, 'croatia')">
+                    <img src="img/croatia.jpg" alt="Хорватия" width="350" height="430">
+                    <div class="places-list__mask"></div>
+                    <div class="places-list__link">Хорватия</div>
+                </a>
             </li>
         </ul>
     </section>
-    <section class="trips container">
+    <section class="trips container" id="trips">
         <h2 class="visually-hidden">Подробнее о туре</h2>
-
         <div class="tabs">
             <button onclick="openCountry(event, 'greece')" class="tabs__links tabs__links--active" id="defaultOpen">
                 Греция
@@ -124,7 +138,6 @@
                 </div>
             </div>
         </div>
-
         <div id="albania" class="tab-content">
             <div class="tab-content__info">
                 <h3 class="tab-content__title">Албания</h3>
@@ -150,7 +163,6 @@
                 </div>
             </div>
         </div>
-
         <div id="macedonia" class="tab-content">
             <div class="tab-content__info">
                 <h3 class="tab-content__title">Македония</h3>
@@ -180,7 +192,6 @@
                 </div>
             </div>
         </div>
-
         <div id="montenegro" class="tab-content">
             <div class="tab-content__info">
                 <h3 class="tab-content__title">Черногория</h3>
@@ -205,7 +216,6 @@
                 </div>
             </div>
         </div>
-
         <div id="croatia" class="tab-content">
             <div class="tab-content__info">
                 <h3 class="tab-content__title">Хорватия</h3>
@@ -234,7 +244,7 @@
             </div>
         </div>
     </section>
-    <section class="price container">
+    <section class="price container" id="prices">
         <h2 class="visually-hidden">Цены</h2>
         <div class="prices">
             <div class="prices__header">
