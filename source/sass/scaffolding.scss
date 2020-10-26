@@ -32,6 +32,10 @@ ul {
   padding: 0;
 }
 
+button {
+  padding: 0;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   clip: rect(0 0 0 0);

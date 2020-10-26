@@ -1,3 +1,7 @@
+function openTab(evt, tabId) {
+    document.getElementById(tabId).click();
+}
+
 function openCountry(evt, countryName) {
     var i, tabcontent, tablinks;
 
@@ -18,4 +22,4 @@ function openCountry(evt, countryName) {
     evt.currentTarget.className += " tabs__links--active";
 }
 
-document.getElementById("defaultOpen").click();
+document.getElementsByClassName("tabs__links")[0].click();

@@ -60,7 +60,7 @@
         </div>
         <ul class="places-list">
             <li class="places-list__item">
-                <a href="#greece" class="places-list__link">
+                <a href="#greece" class="places-list__link" onclick="openTab(event, 'greeceTab')">
                     <img class="places-list__pic" src="img/greece.jpg" alt="Греция" width="350" height="430">
                     <div class="places-list__mask">
                         <div class="places-list__frame">
@@ -71,7 +71,7 @@
                 </a>
             </li>
             <li class="places-list__item places-list__item--frame places-list__item--bottom">
-                <a href="#albania" class="places-list__link" onclick="openCountry(event, 'albania')">
+                <a href="#albania" class="places-list__link" onclick="openTab(event, 'albaniaTab')">
                     <img class="places-list__pic" src="img/albania.jpg" alt="Албания" width="350" height="430">
                     <div class="places-list__mask">
                         <div class="places-list__frame">
@@ -82,7 +82,7 @@
                 </a>
             </li>
             <li class="places-list__item">
-                <a href="#macedonia" class="places-list__link" onclick="openCountry(event, 'macedonia')">
+                <a href="#macedonia" class="places-list__link" onclick="openTab(event, 'macedoniaTab')">
                     <img class="places-list__pic" src="img/macedonia.jpg" alt="Македония" width="350" height="430">
                     <div class="places-list__mask">
                         <div class="places-list__frame">
@@ -93,7 +93,7 @@
                 </a>
             </li>
             <li class="places-list__item places-list__item--frame">
-                <a href="#montenegro" class="places-list__link" onclick="openCountry(event, 'montenegro')">
+                <a href="#montenegro" class="places-list__link" onclick="openTab(event, 'montenegroTab')">
                     <img src="img/montenegro.jpg" alt="Черногория" width="350" height="430">
                     <div class="places-list__mask">
                         <div class="places-list__frame">
@@ -104,7 +104,7 @@
                 </a>
             </li>
             <li class="places-list__item places-list__item--frame">
-                <a href="#croatia" class="places-list__link" onclick="openCountry(event, 'croatia')">
+                <a href="#croatia" class="places-list__link" onclick="openTab(event, 'croatiaTab')">
                     <img src="img/croatia.jpg" alt="Хорватия" width="350" height="430">
                     <div class="places-list__mask">
                         <div class="places-list__frame">
@@ -119,13 +119,11 @@
     <section class="trips container" id="trips">
         <h2 class="visually-hidden">Подробнее о туре</h2>
         <div class="tabs">
-            <button onclick="openCountry(event, 'greece')" class="tabs__links tabs__links--active" id="defaultOpen">
-                Греция
-            </button>
-            <button onclick="openCountry(event, 'albania')" class="tabs__links">Албания</button>
-            <button onclick="openCountry(event, 'macedonia')" class="tabs__links">Македония</button>
-            <button onclick="openCountry(event, 'montenegro')" class="tabs__links">Черногория</button>
-            <button onclick="openCountry(event, 'croatia')" class="tabs__links">Хорватия</button>
+            <button id="greeceTab" onclick="openCountry(event, 'greece')" class="tabs__links tabs__links--active">Греция</button>
+            <button id="albaniaTab" onclick="openCountry(event, 'albania')" class="tabs__links">Албания</button>
+            <button id="macedoniaTab" onclick="openCountry(event, 'macedonia')" class="tabs__links">Македония</button>
+            <button id="montenegroTab" onclick="openCountry(event, 'montenegro')" class="tabs__links">Черногория</button>
+            <button id="croatiaTab" onclick="openCountry(event, 'croatia')" class="tabs__links">Хорватия</button>
         </div>
         <div class="trips__rectangle"></div>
 
@@ -269,7 +267,7 @@
         <div class="prices">
             <div class="prices__header">
                 <h3 class="prices__name">Комплексный</h3>
-                <span class="prices__sum">$1999</span>
+                <div class="prices__sum">$1999</div>
             </div>
             <p class="prices__meet">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
             <div class="prices__rect"></div>
@@ -279,8 +277,7 @@
                         <svg class="prices__check" width="14" height="12" viewBox="0 0 14 12" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"
-                                  fill="#FE7865"/>
+                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"/>
                         </svg>
                     </span>
                     <span class="prices__text">Разработанный маршрут с гидом группы</span>
@@ -290,8 +287,7 @@
                         <svg class="prices__check" width="14" height="12" viewBox="0 0 14 12" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"
-                                  fill="#FE7865"/>
+                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"/>
                         </svg>
                     </span>
                     <span class="prices__text">Перелет, трансфер и проживание в отелях</span>
@@ -301,8 +297,7 @@
                         <svg class="prices__check" width="14" height="12" viewBox="0 0 14 12" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"
-                                  fill="#FE7865"/>
+                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"/>
                         </svg>
                     </span>
                     <span class="prices__text">Завтраки, ужины в отелях и ланчи на природе</span>
@@ -312,8 +307,7 @@
                         <svg class="prices__check" width="14" height="12" viewBox="0 0 14 12" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"
-                                  fill="#FE7865"/>
+                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"/>
                         </svg>
                     </span>
                     <span class="prices__text">Экскурсии по удивительно красивым местам Европы</span>
@@ -324,7 +318,7 @@
         <div class="prices">
             <div class="prices__header">
                 <h3 class="prices__name">Экономный</h3>
-                <span class="prices__sum">$1399</span>
+                <div class="prices__sum">$1399</div>
             </div>
             <p class="prices__meet">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
             <div class="prices__rect"></div>
@@ -334,8 +328,7 @@
                         <svg class="prices__check" width="14" height="12" viewBox="0 0 14 12" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"
-                                  fill="#FE7865"/>
+                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"/>
                         </svg>
                     </span> <span class="prices__text">
                     Разработанный маршрут с гидом группы</span>
@@ -345,8 +338,7 @@
                         <svg class="prices__check" width="14" height="12" viewBox="0 0 14 12" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"
-                                  fill="#FE7865"/>
+                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"/>
                         </svg>
                     </span>
                     <span class="prices__text">
@@ -357,8 +349,7 @@
                         <svg class="prices__check" width="14" height="12" viewBox="0 0 14 12" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"
-                                  fill="#FE7865"/>
+                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"/>
                         </svg>
                     </span>
                     <span class="prices__text">
@@ -369,8 +360,7 @@
                         <svg class="prices__check" width="14" height="12" viewBox="0 0 14 12" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"
-                                  fill="#FE7865"/>
+                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"/>
                         </svg>
                     </span>
                     <span class="prices__text">
@@ -381,8 +371,7 @@
                         <svg class="prices__check" width="14" height="12" viewBox="0 0 14 12" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"
-                                  fill="#FE7865"/>
+                                  d="M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z"/>
                         </svg>
                     </span>
                     <span class="prices__text">
