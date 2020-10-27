@@ -1,13 +1,14 @@
 .prices {
   width: 370px;
   height: 672px;
-  border: 1px solid rgba(35, 37, 50, 0.3);
+ /* border: 1px solid rgba(35, 37, 50, 0.3);*/
+  box-shadow: 0 0 0 1px rgba(35, 37, 50, 0.3);
   border-radius: 6px;
 
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 39px 32px 32px;
+  padding: 37px 30px 30px;
   margin-right: 30px;
 }
 
@@ -25,8 +26,7 @@
 
 .prices:hover,
 .prices:focus {
-  border: 3px solid #fe7865;
-  padding: 37px 30px 30px;
+  box-shadow: 0 0 0 3px #fe7865;
 
   &:before {
     display: none;
