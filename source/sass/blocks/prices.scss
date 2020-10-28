@@ -1,15 +1,14 @@
 .prices {
-  width: 370px;
-  height: 672px;
- /* border: 1px solid rgba(35, 37, 50, 0.3);*/
-  box-shadow: 0 0 0 1px rgba(35, 37, 50, 0.3);
-  border-radius: 6px;
-
   display: flex;
   flex-direction: column;
+  width: 370px;
+  height: 672px;
   box-sizing: border-box;
   padding: 37px 30px 30px;
   margin-right: 30px;
+
+  box-shadow: 0 0 0 1px rgba(35, 37, 50, 0.3);
+  border-radius: 6px;
 }
 
 .prices__header {
@@ -21,6 +20,7 @@
   margin: 0;
   width: 100%;
   padding-bottom: 40px;
+
   color: rgba(20, 21, 23, 0.7);
 }
 
@@ -46,12 +46,14 @@
 }
 
 .prices__name {
+  margin: 0;
+
   color: rgba(20, 21, 23, 0.7);
   font-weight: 600;
   font-size: 28px;
   line-height: 38px;
   text-align: left;
-  margin: 0;
+
 }
 
 .prices__sum {
@@ -63,13 +65,15 @@
 }
 
 .prices__meet {
+  margin: 0;
+  width: 90%;
+  align-self: flex-start;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
-  margin: 0;
-  width: 90%;
-  align-self: flex-start;
+
 }
 
 .prices__rect {

@@ -23,3 +23,26 @@ function openCountry(evt, countryName) {
 }
 
 document.getElementsByClassName("tabs__links")[0].click();
+
+// Модальное окно об отправке формы
+var popup = document.querySelector(".popup");
+var overlay = document.querySelector(".popup-overlay");
+var popupCLoseBtn = popup.querySelector(".success__close");
+var formSubmitBtn = document.querySelector(".form__btn");
+
+formSubmitBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("popup__show");
+    overlay.classList.add("popup-overlay__show");
+});
+
+var closePopup = function (evt) {
+    if (evt.button === 0 || evt.key === 'Escape') {
+        popup.classList.remove("popup__show");
+        overlay.classList.remove("popup-overlay__show");
+    }
+};
+
+document.addEventListener('keydown', closePopup, true);
+popupCLoseBtn.addEventListener('mousedown', closePopup, true);
+document.querySelector(".popup-overlay").addEventListener('mousedown', closePopup, true);

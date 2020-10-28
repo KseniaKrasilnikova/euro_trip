@@ -1,0 +1,22 @@
+.popup {
+  display: none;
+
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  bottom: 81%;
+
+  width: 728px;
+  height: 444px;
+
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 42.5px;
+
+  background-color: #FBF8F8;
+}
+
+.popup__show {
+  display: block;
+}
