@@ -23,3 +23,9 @@
   border: none;
   background: transparent;
 }
+
+
+.success__close-cross:hover,
+.success__close-cross:focus {
+  stroke-opacity: 100%;
+}

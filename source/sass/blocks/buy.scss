@@ -1,0 +1,100 @@
+.buy {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.buy__form-container {
+  width: 390px;
+  height: 100%;
+}
+
+.buy__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 72px 0;
+}
+
+.buy__title {
+  margin: 0 0 31px 0;
+  padding: 0;
+
+  font-weight: 600;
+  color: #48494D;
+  font-size: 25px;
+  line-height: 42.5px;
+  text-align: center;
+}
+
+.buy__inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buy__button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  padding: 0;
+
+  font-size: 0;
+
+  border: 0;
+  background: none;
+}
+
+.buy__close {
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background: transparent;
+}
+
+.buy__inputs-phone {
+display: flex;
+ flex-wrap: nowrap;
+  flex-direction: row;
+}
+.buy__label {
+
+}
+
+.buy__icon {
+  position: absolute;
+  padding: 26px 0 0 13px;
+}
+
+.buy__code {
+  position: absolute;
+  padding: 25px 0 0 24px;
+  font-size: 14px;
+}
+
+.buy__input {
+  height: 50px;
+  width: 269px;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin: 20px 0 0 0;
+  background-color: white;
+  border: 1px solid rgba(44, 46, 63, 0.3);
+}
+
+.buy__btn {
+  width: 176px;
+  height: 50px;
+  margin-top: 21px;
+}
+
+#buy-phone {
+  padding-left: 51px;
+}
+
+#buy-mail {
+  padding-left: 15px;
+}
