@@ -1,10 +1,12 @@
-.popup {
+.popup-buy {
   display: none;
 
-  position: relative;
+  position: fixed;
   z-index: 2;
   margin: 0 auto;
-  bottom: 81%;
+  bottom: 40%;
+  left: 0;
+  right: 0;
 
   width: 728px;
   height: 444px;
@@ -17,6 +19,6 @@
   background-color: #FBF8F8;
 }
 
-.popup__show {
-  display: block;
+.popup-buy__show {
+  display: flex;
 }

@@ -3,16 +3,14 @@ function openTab(evt, tabId) {
 }
 
 function openCountry(evt, countryName) {
-    var i, tabcontent, tablinks;
-
     // Получить все элементы с class="tab-content" и скрыть их
-    tabcontent = document.getElementsByClassName("tab-content");
+    var tabcontent = document.getElementsByClassName("tab-content");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
     // Получить все элементы с class="tabs__links" и удалить class "active"
-    tablinks = document.getElementsByClassName("tabs__links");
+    var tablinks = document.getElementsByClassName("tabs__links");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" tabs__links--active", "");
     }
@@ -24,7 +22,7 @@ function openCountry(evt, countryName) {
 
 document.getElementsByClassName("tabs__links")[0].click();
 
-// Модальное окно об отправке формы
+// Модальное окно об отправке формы (.success)
 var popup = document.querySelector(".popup");
 var overlay = document.querySelector(".popup-overlay");
 var popupCLoseBtn = popup.querySelector(".success__close");
@@ -46,3 +44,29 @@ var closePopup = function (evt) {
 document.addEventListener('keydown', closePopup, true);
 popupCLoseBtn.addEventListener('mousedown', closePopup, true);
 document.querySelector(".popup-overlay").addEventListener('mousedown', closePopup, true);
+
+
+
+
+// Модальное окно форма Купить тур (.success)
+var popupBuy = document.querySelector(".popup-buy");
+var buyOverlay = document.querySelector(".popup-buy-overlay");
+var buyCLoseBtn = popup.querySelector(".buy__close");
+var buyTourBtn = document.querySelector(".tab-content__btn");
+
+buyTourBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupBuy.classList.add("popup-buy__show");
+    buyOverlay.classList.add("popup-buy-overlay__show");
+});
+
+/*var closePopup = function (evt) {
+    if (evt.button === 0 || evt.key === 'Escape') {
+        popup.classList.remove("popup__show");
+        overlay.classList.remove("popup-overlay__show");
+    }
+};*/
+
+/*document.addEventListener('keydown', closePopup, true);
+buyCLoseBtn.addEventListener('mousedown', closePopup, true);
+document.querySelector(".popup-overlay").addEventListener('mousedown', closePopup, true);*/
