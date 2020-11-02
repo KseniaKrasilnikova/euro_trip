@@ -43,7 +43,7 @@ var closePopup = function (evt) {
 
 document.addEventListener('keydown', closePopup, true);
 popupCLoseBtn.addEventListener('mousedown', closePopup, true);
-document.querySelector(".popup-overlay").addEventListener('mousedown', closePopup, true);
+overlay.addEventListener('mousedown', closePopup, true);
 
 
 
@@ -51,8 +51,8 @@ document.querySelector(".popup-overlay").addEventListener('mousedown', closePopu
 // Модальное окно форма Купить тур (.success)
 var popupBuy = document.querySelector(".popup-buy");
 var buyOverlay = document.querySelector(".popup-buy-overlay");
-var buyCLoseBtn = popup.querySelector(".buy__close");
-var buyTourBtn = document.querySelector(".tab-content__btn");
+var buyCLoseBtn = popupBuy.querySelector(".buy__close");
+var buyTourBtn = document.querySelector(".buy-tour-btn");
 
 buyTourBtn.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -60,13 +60,14 @@ buyTourBtn.addEventListener("click", function (evt) {
     buyOverlay.classList.add("popup-buy-overlay__show");
 });
 
-/*var closePopup = function (evt) {
+var closePopupBuy = function (evt) {
     if (evt.button === 0 || evt.key === 'Escape') {
-        popup.classList.remove("popup__show");
-        overlay.classList.remove("popup-overlay__show");
+        popupBuy.classList.remove("popup-buy__show");
+        buyOverlay.classList.remove("popup-buy-overlay__show");
     }
-};*/
+};
 
-/*document.addEventListener('keydown', closePopup, true);
-buyCLoseBtn.addEventListener('mousedown', closePopup, true);
-document.querySelector(".popup-overlay").addEventListener('mousedown', closePopup, true);*/
+document.addEventListener('keydown', closePopupBuy, true);
+buyCLoseBtn.addEventListener('mousedown', closePopupBuy, true);
+buyOverlay.addEventListener('mousedown', closePopupBuy, true);
+
