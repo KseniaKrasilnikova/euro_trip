@@ -45,20 +45,17 @@ document.addEventListener('keydown', closePopup, true);
 popupCLoseBtn.addEventListener('mousedown', closePopup, true);
 overlay.addEventListener('mousedown', closePopup, true);
 
-
-
-
-// Модальное окно форма Купить тур (.success)
+// Модальное окно Купить тур (.buy)
 var popupBuy = document.querySelector(".popup-buy");
 var buyOverlay = document.querySelector(".popup-buy-overlay");
 var buyCLoseBtn = popupBuy.querySelector(".buy__close");
-var buyTourBtn = document.querySelector(".buy-tour-btn");
 
-buyTourBtn.addEventListener("click", function (evt) {
+var openPopupBuy = function (evt) {
     evt.preventDefault();
     popupBuy.classList.add("popup-buy__show");
     buyOverlay.classList.add("popup-buy-overlay__show");
-});
+    document.getElementById("buy-phone").focus();
+};
 
 var closePopupBuy = function (evt) {
     if (evt.button === 0 || evt.key === 'Escape') {
