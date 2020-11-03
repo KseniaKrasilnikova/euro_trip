@@ -68,3 +68,21 @@ document.addEventListener('keydown', closePopupBuy, true);
 buyCLoseBtn.addEventListener('mousedown', closePopupBuy, true);
 buyOverlay.addEventListener('mousedown', closePopupBuy, true);
 
+// localstorage
+var buyForm = popupBuy.querySelector(".buy__form");
+var onSubmit = function () {
+    localStorage.setItem("buy-phone", document.getElementById("buy-phone").value);
+    localStorage.setItem("buy-mail", document.getElementById("buy-mail").value);
+};
+
+buyForm.addEventListener('submit', onSubmit, true);
+
+// Модальное окно об отправке формы (.buy)
+var buySubmitBtn = popupBuy.querySelector(".buy__btn");
+
+buySubmitBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    closePopupBuy(evt);
+    popup.classList.add("popup__show");
+    overlay.classList.add("popup-overlay__show");
+});
