@@ -4,7 +4,7 @@
   width: 370px;
   height: 672px;
   box-sizing: border-box;
-  padding: 37px 30px 30px;
+  padding: 40px 30px 30px;
   margin-right: 30px;
 
   box-shadow: 0 0 0 1px rgba(35, 37, 50, 0.3);
@@ -73,14 +73,13 @@
   font-size: 16px;
   line-height: 24px;
   text-align: left;
-
 }
 
 .prices__rect {
-  background-color: rgba(44, 46, 63, 0.3);
+  margin-top: 26px;
   width: 310px;
   height: 1px;
-  margin-top: 26px;
+  background-color: rgba(44, 46, 63, 0.3);
 }
 
 .prices__icon-box {

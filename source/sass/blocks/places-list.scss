@@ -38,23 +38,27 @@
 }
 
 .places-list__details {
+  margin: 0;
+
   color: white;
   text-transform: uppercase;
-  margin: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 17.07px;
   text-align: center;
+
   background-color: transparent;
 }
+
 .places-list__frame {
-  width: 266px;
-  height: 77px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 266px;
+  height: 77px;
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .places-list__link:hover .places-list__mask {
@@ -72,24 +76,19 @@
 }
 
 .places-list__text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin: 0;
+  width: 215px;
+  height: 62px;
+
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
 
-  width: 215px;
-  height: 61px;
   background-color: white;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  position: absolute;
 }
-
-
-/*
-.places-list__disabled {
-  display: none;
-}*/

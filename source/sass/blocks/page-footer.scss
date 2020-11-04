@@ -16,7 +16,7 @@
   line-height: 32px;
   text-align: left;
   color: #141517;
-  margin: 0 0 13px 0;
+  margin: 0 0 15px 0;
 }
 
 .page-footer__text {
@@ -74,7 +74,7 @@
   line-height: 17px;
   text-align: left;
   text-decoration: underline;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .page-footer__tel {
@@ -84,7 +84,7 @@
   line-height: 32px;
   text-align: left;
   text-decoration: underline;
-  margin-top: 8px;
+  margin-top: 5px;
 }
 
 .page-footer__info {
@@ -97,5 +97,9 @@
 }
 
 .page-footer__icon {
-  margin-right: 12px;
+
+    width: 26px;
+    margin-right: 8px;
+    margin-top: 7px;
+    height: 20px;
 }
