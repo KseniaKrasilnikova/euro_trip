@@ -16,7 +16,7 @@
   line-height: 32px;
   text-align: left;
   color: #141517;
-  margin: 0 0 10px 0;
+  margin: 0 0 13px 0;
 }
 
 .page-footer__text {
@@ -28,13 +28,12 @@
   width: 320px;
 }
 
-.page-footer__item {
+.page-footer__item a {
   color: rgba(20, 21, 23, 0.5);
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   text-align: left;
-  margin-top: 10px;
   margin-right: 52px;
 }
 
@@ -42,7 +41,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 135px;
+  height: 142px;
   width: 350px;
 }
 
@@ -56,7 +55,7 @@
   display: flex;
   flex-direction: column;
   width: 267px;
-  margin: 0 45px 0 88px;
+  margin: 0px 34px 0 130px;
 }
 
 .page-footer__mail,
@@ -65,7 +64,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  margin-top: 7px;
+  width: 270px;
 }
 
 .page-footer__email {
@@ -75,6 +74,7 @@
   line-height: 17px;
   text-align: left;
   text-decoration: underline;
+  margin-top: 8px;
 }
 
 .page-footer__tel {
@@ -84,10 +84,7 @@
   line-height: 32px;
   text-align: left;
   text-decoration: underline;
-}
-
-.page-footer__icon {
-  margin-right: 11px;
+  margin-top: 8px;
 }
 
 .page-footer__info {
@@ -97,4 +94,8 @@
 
 .page-footer__text {
   margin-top: 22px;
+}
+
+.page-footer__icon {
+  margin-right: 12px;
 }
