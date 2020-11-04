@@ -23,50 +23,50 @@ function openCountry(evt, countryName) {
 document.getElementsByClassName("tabs__links")[0].click();
 
 // Модальное окно об отправке формы (.success)
-var popup = document.querySelector(".popup");
-var overlay = document.querySelector(".popup-overlay");
-var popupCLoseBtn = popup.querySelector(".success__close");
+var popupSuccess = document.querySelector(".success");
+var overlaySuccess = document.querySelector(".overlay-success");
+var popupCLoseBtn = popupSuccess.querySelector(".success__close");
 var formSubmitBtn = document.querySelector(".form__btn");
 
 formSubmitBtn.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.add("popup__show");
-    overlay.classList.add("popup-overlay__show");
+    popupSuccess.classList.add("popup__show");
+    overlaySuccess.classList.add("popup-overlay__show");
 });
 
 var closePopup = function (evt) {
     if (evt.button === 0 || evt.key === 'Escape') {
-        popup.classList.remove("popup__show");
-        overlay.classList.remove("popup-overlay__show");
+        popupSuccess.classList.remove("popup__show");
+        overlaySuccess.classList.remove("popup-overlay__show");
     }
 };
 
 document.addEventListener('keydown', closePopup, true);
 popupCLoseBtn.addEventListener('mousedown', closePopup, true);
-overlay.addEventListener('mousedown', closePopup, true);
+overlaySuccess.addEventListener('mousedown', closePopup, true);
 
 // Модальное окно Купить тур (.buy)
-var popupBuy = document.querySelector(".popup-buy");
-var buyOverlay = document.querySelector(".popup-buy-overlay");
+var popupBuy = document.querySelector(".buy");
+var overlayBuy = document.querySelector(".overlay-buy");
 var buyCLoseBtn = popupBuy.querySelector(".buy__close");
 
 var openPopupBuy = function (evt) {
     evt.preventDefault();
-    popupBuy.classList.add("popup-buy__show");
-    buyOverlay.classList.add("popup-buy-overlay__show");
+    popupBuy.classList.add("popup__show");
+    overlayBuy.classList.add("popup-overlay__show");
     document.getElementById("buy-phone").focus();
 };
 
 var closePopupBuy = function (evt) {
     if (evt.button === 0 || evt.key === 'Escape') {
-        popupBuy.classList.remove("popup-buy__show");
-        buyOverlay.classList.remove("popup-buy-overlay__show");
+        popupBuy.classList.remove("popup__show");
+        overlayBuy.classList.remove("popup-overlay__show");
     }
 };
 
 document.addEventListener('keydown', closePopupBuy, true);
+overlayBuy.addEventListener('mousedown', closePopupBuy, true);
 buyCLoseBtn.addEventListener('mousedown', closePopupBuy, true);
-buyOverlay.addEventListener('mousedown', closePopupBuy, true);
 
 // localstorage
 var buyForm = popupBuy.querySelector(".buy__form");
@@ -83,6 +83,6 @@ var buySubmitBtn = popupBuy.querySelector(".buy__btn");
 buySubmitBtn.addEventListener("click", function (evt) {
     evt.preventDefault();
     closePopupBuy(evt);
-    popup.classList.add("popup__show");
-    overlay.classList.add("popup-overlay__show");
+    popupSuccess.classList.add("popup__show");
+    overlaySuccess.classList.add("popup-overlay__show");
 });
