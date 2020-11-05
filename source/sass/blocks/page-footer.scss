@@ -46,7 +46,7 @@
 }
 
 .page-footer__divider {
-  width: 1px;
+  min-width: 1px;
   height: 100%;
   background-color: #D7D9DF;
 }
@@ -55,7 +55,7 @@
   display: flex;
   flex-direction: column;
   width: 267px;
-  margin: 0px 34px 0 130px;
+  margin: 0 34px 0 85px;
 }
 
 .page-footer__mail,
@@ -65,16 +65,20 @@
   flex-wrap: nowrap;
   align-items: center;
   width: 270px;
+  margin-top: 5px;
+  margin-left: 4px;
 }
 
 .page-footer__email {
+  margin-bottom: 7px;
+  margin-left: 16px;
+
   color: #fe7865;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   text-align: left;
   text-decoration: underline;
-  margin-top: 4px;
 }
 
 .page-footer__tel {
@@ -84,7 +88,7 @@
   line-height: 32px;
   text-align: left;
   text-decoration: underline;
-  margin-top: 5px;
+  margin-left: 12px;
 }
 
 .page-footer__info {
@@ -94,12 +98,4 @@
 
 .page-footer__text {
   margin-top: 22px;
-}
-
-.page-footer__icon {
-
-    width: 26px;
-    margin-right: 8px;
-    margin-top: 7px;
-    height: 20px;
 }
