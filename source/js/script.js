@@ -2,6 +2,26 @@ function openTab(evt, tabId) {
     document.getElementById(tabId).click();
 }
 
+document.getElementById("greeceTab").addEventListener("click", function (evt) {
+    openCountry(evt, 'greece');
+});
+
+document.getElementById("albaniaTab").addEventListener("click", function (evt) {
+    openCountry(evt, 'albania');
+});
+
+document.getElementById("macedoniaTab").addEventListener("click", function (evt) {
+    openCountry(evt, 'macedonia');
+});
+
+document.getElementById("montenegroTab").addEventListener("click", function (evt) {
+    openCountry(evt, 'montenegro');
+});
+
+document.getElementById("croatiaTab").addEventListener("click", function (evt) {
+    openCountry(evt, 'croatia');
+});
+
 function openCountry(evt, countryName) {
     // Получить все элементы с class="tab-content" и скрыть их
     var tabcontent = document.getElementsByClassName("tab-content");
