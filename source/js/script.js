@@ -56,7 +56,6 @@ function openCountry(evt, countryName) {
 
     // Показать текущую вкладку и добавить "active" класс для кнопки, открывшей вкладку
     document.getElementById(countryName).style.display = "flex";
-    document.getElementById(countryName).click();
     evt.currentTarget.className += " tabs__links--active";
 }
 
@@ -107,6 +106,11 @@ var closePopupBuy = function (evt) {
 document.addEventListener('keydown', closePopupBuy, true);
 overlayBuy.addEventListener('mousedown', closePopupBuy, true);
 buyCLoseBtn.addEventListener('mousedown', closePopupBuy, true);
+
+var buyBtn = document.getElementsByClassName("popup-buy");
+for (i = 0; i < buyBtn.length; i++) {
+    buyBtn[i].addEventListener('mousedown', openPopupBuy, true);
+}
 
 // localstorage
 var buyForm = popupBuy.querySelector(".buy__form");
