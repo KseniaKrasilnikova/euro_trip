@@ -1,3 +1,4 @@
+// табы
 function openTab(evt, tabId) {
     document.getElementById(tabId).click();
 }
@@ -22,6 +23,24 @@ document.getElementById("croatiaTab").addEventListener("click", function (evt) {
     openCountry(evt, 'croatia');
 });
 
+// ---- //
+document.getElementById("greeceLink").addEventListener("click", function (evt) {
+    openTab(evt, 'greeceTab');
+});
+document.getElementById("albaniaLink").addEventListener("click", function (evt) {
+    openTab(evt, 'albaniaTab');
+});
+document.getElementById("macedoniaLink").addEventListener("click", function (evt) {
+    openTab(evt, 'macedoniaTab');
+});
+document.getElementById("montenegroLink").addEventListener("click", function (evt) {
+    openTab(evt, 'montenegroTab');
+});
+document.getElementById("croatiaLink").addEventListener("click", function (evt) {
+    openTab(evt, 'croatiaTab');
+});
+// ---- //
+
 function openCountry(evt, countryName) {
     // Получить все элементы с class="tab-content" и скрыть их
     var tabcontent = document.getElementsByClassName("tab-content");
@@ -37,6 +56,7 @@ function openCountry(evt, countryName) {
 
     // Показать текущую вкладку и добавить "active" класс для кнопки, открывшей вкладку
     document.getElementById(countryName).style.display = "flex";
+    document.getElementById(countryName).click();
     evt.currentTarget.className += " tabs__links--active";
 }
 
