@@ -1,26 +1,28 @@
 .tabs {
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
 }
 
 .tabs__links {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 19px 96px 13px 1px;
+  padding: 18px 98px 14px 0;
 
   color: rgba(44, 46, 63, 0.3);
   font-weight: 500;
   font-size: 20px;
   line-height: 24.38px;
   letter-spacing: 1.59px;
-}
 
-/*.tabs button:hover {
-  color: #FE7865;
-}*/
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 
 .tabs__links--active {
   color: #FE7865;
+}
+
+.tabs__links:focus {
+  border: 1px solid #2C2E3F;
 }

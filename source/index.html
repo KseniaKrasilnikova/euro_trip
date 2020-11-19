@@ -51,7 +51,10 @@
                 <p class="intro__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море,
                     горы, а также потрясающая красота природы.</p>
                 <a href="#trips" class="intro__button btn">смотреть тур
-                    <img class="intro__arrow" src="img/arrow-right.png" alt="смотреть тур" width="16" height="16">
+                    <svg class="intro__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 1V15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 8L8 15L1 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </a>
             </div>
         </div>
@@ -148,7 +151,7 @@
                     песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет
                     неописуемая
                     красота природы и атмосфера, царящая в монастырях Метеоры. </p>
-                <button class="tab-content__btn btn popup-buy">Купить тур сейчас</button>
+                <a class="tab-content__btn btn popup-buy" href="#">Купить тур сейчас</a>
             </div>
             <img class="tab-content__pic" src="img/greece-review.jpg" alt="Греция" width="430" height="596">
             <div class="tab-content__review review">
@@ -174,7 +177,7 @@
                     правда
                     невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не
                     песок, а камни, перетёртые до такого мелкого состояния. </p>
-                <button class="tab-content__btn btn popup-buy">Купить тур сейчас</button>
+                <a class="tab-content__btn btn popup-buy">Купить тур сейчас</a>
             </div>
             <img class="tab-content__pic" src="img/albania-review.jpg" alt="Греция" width="430" height="596">
             <div class="tab-content__review review">
@@ -200,7 +203,7 @@
                     А также мы заберемся на вершину горы Татичев Камен где находится археологический памятник Кокино
                     в
                     длину около 100 метров.</p>
-                <button class="tab-content__btn btn popup-buy">Купить тур сейчас</button>
+                <a class="tab-content__btn btn popup-buy">Купить тур сейчас</a>
             </div>
             <img class="tab-content__pic" src="img/macedonia-review.jpg" alt="Греция" width="430" height="596">
             <div class="tab-content__review review">
@@ -227,7 +230,7 @@
                     который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех.
                     При
                     этом длина каньона составляет 80 км.</p>
-                <button class="tab-content__btn btn popup-buy">Купить тур сейчас</button>
+                <a class="tab-content__btn btn popup-buy">Купить тур сейчас</a>
             </div>
             <img class="tab-content__pic" src="img/macedonia-review.jpg" alt="Греция" width="430" height="596">
             <div class="tab-content__review review">
@@ -252,7 +255,7 @@
                     удивительными нерукотворными скульптурами — сталактитами и сталагмитами — формировавшимися
                     тысячи и
                     тысячи лет.</p>
-                <button class="tab-content__btn btn popup-buy">Купить тур сейчас</button>
+                <a class="tab-content__btn btn popup-buy">Купить тур сейчас</a>
             </div>
             <img class="tab-content__pic" src="img/macedonia-review.jpg" alt="Греция" width="430" height="596">
             <div class="tab-content__review review">
@@ -322,7 +325,7 @@
                     <span class="prices__text">Экскурсии по удивительно красивым местам Европы</span>
                 </li>
             </ul>
-            <button class="prices__btn btn popup-buy">Купить тур сейчас</button>
+            <a class="prices__btn btn popup-buy">Купить тур сейчас</a>
         </div>
         <div class="prices">
             <div class="prices__header">
@@ -387,7 +390,7 @@
                         Экскурсии по удивительно красивым местам Европы</span>
                 </li>
             </ul>
-            <button class="prices__btn btn popup-buy">Купить тур сейчас</button>
+            <a class="prices__btn btn popup-buy">Купить тур сейчас</a>
         </div>
         <div class="prices-about">
             <h3 class="prices-about__title">Цены</h3>
@@ -410,22 +413,23 @@
         </div>
     </section>
     <section class="form-container container">
-        <img class="form-container__pic" src="img/sunset.jpg" alt="Закат" width="844" height="455">
         <div class="form-container__content">
             <form class="form" action="https://echo.htmlacademy.ru" method="post">
                 <h4 class="form__title">У Вас остались вопросы?</h4>
                 <p class="form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
                 <div class="form__inputs">
-                    <label class="form__label" for="phone"></label>
-                    <svg class="form__icon" width="6" height="27" viewBox="0 0 6 27" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.519 10.028L3.434 8.158L4.998 9.161L5.542 8.243L3.893 7.393L5.542 6.543L4.998 5.608L3.434 6.611L3.519 4.741H2.448L2.533 6.611L0.952 5.608L0.425 6.543L2.074 7.393L0.425 8.243L0.952 9.161L2.533 8.158L2.448 10.028H3.519Z"
-                              fill="#FE7865"/>
-                    </svg>
-                    <span class="form__code">+7</span>
-                    <input class="form__input" id="phone" type="tel" placeholder="Введите 10 цифр номера">
-                    <label class="form__label" for="mail"></label>
-                    <input class="form__input" id="mail" type="email" placeholder="E-mail">
+                    <label class="form__label" for="phone">
+                        <svg class="form__icon" width="6" height="27" viewBox="0 0 6 27" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.519 10.028L3.434 8.158L4.998 9.161L5.542 8.243L3.893 7.393L5.542 6.543L4.998 5.608L3.434 6.611L3.519 4.741H2.448L2.533 6.611L0.952 5.608L0.425 6.543L2.074 7.393L0.425 8.243L0.952 9.161L2.533 8.158L2.448 10.028H3.519Z"
+                                  fill="#FE7865"/>
+                        </svg>
+                        <span class="form__code">+7</span>
+                        <input class="form__input" id="phone" type="tel" placeholder="Введите 10 цифр номера">
+                    </label>
+                    <label class="form__label" for="mail">
+                        <input class="form__input" id="mail" type="email" placeholder="E-mail">
+                    </label>
                 </div>
                 <div>
                     <input type="submit" value="Отправить" class="form__btn btn">
@@ -529,17 +533,19 @@
             <h3 class="buy__title">Купить тур</h3>
             <div class="buy__inputs">
                 <div class="buy__inputs-phone">
-                    <label class="buy__label" for="buy-phone"></label>
-                    <svg class="buy__icon" width="6" height="27" viewBox="0 0 6 27" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.519 10.028L3.434 8.158L4.998 9.161L5.542 8.243L3.893 7.393L5.542 6.543L4.998 5.608L3.434 6.611L3.519 4.741H2.448L2.533 6.611L0.952 5.608L0.425 6.543L2.074 7.393L0.425 8.243L0.952 9.161L2.533 8.158L2.448 10.028H3.519Z"
-                              fill="#FE7865"/>
-                    </svg>
-                    <span class="buy__code">+7</span>
-                    <input class="buy__input" id="buy-phone" type="tel" placeholder="Введите 10 цифр номера">
+                    <label class="buy__label" for="buy-phone">
+                        <svg class="buy__icon" width="6" height="27" viewBox="0 0 6 27" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.519 10.028L3.434 8.158L4.998 9.161L5.542 8.243L3.893 7.393L5.542 6.543L4.998 5.608L3.434 6.611L3.519 4.741H2.448L2.533 6.611L0.952 5.608L0.425 6.543L2.074 7.393L0.425 8.243L0.952 9.161L2.533 8.158L2.448 10.028H3.519Z"
+                                  fill="#FE7865"/>
+                        </svg>
+                        <span class="buy__code">+7</span>
+                        <input class="buy__input" id="buy-phone" type="tel" placeholder="Введите 10 цифр номера">
+                    </label>
                 </div>
-                <label class="buy__label" for="buy-mail"></label>
-                <input class="buy__input" id="buy-mail" type="email" placeholder="E-mail">
+                <label class="buy__label" for="buy-mail">
+                    <input class="buy__input" id="buy-mail" type="email" placeholder="E-mail">
+                </label>
             </div>
             <div>
                 <input class="buy__btn btn" type="submit" value="Отправить">

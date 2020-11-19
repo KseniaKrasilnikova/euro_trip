@@ -1,10 +1,15 @@
 .form-container {
   margin-top: 138px;
   margin-bottom: 170px;
+  margin-left: 387px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  min-height: 455px;
+
+  background-image: url("../img/sunset.jpg");
+  background-repeat: no-repeat;
 }
 
 .form-container__pic {
@@ -13,5 +18,5 @@
 
 .form-container__content {
   position: absolute;
-  margin-left: 526px;
+  margin-left: 514px;
 }
