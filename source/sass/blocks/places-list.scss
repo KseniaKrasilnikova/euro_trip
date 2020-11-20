@@ -3,7 +3,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 24px 0 0 0;
 }
 
 .places-list__item {
