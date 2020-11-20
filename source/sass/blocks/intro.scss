@@ -41,14 +41,11 @@
 
 .intro__button {
   width: 339px;
-  height: 74px;
+  min-height: 74px;
 
   display: flex;
   align-items: center;
   justify-content: space-around;
-
-  padding: 36px 36px 36px 41px;;
-  box-sizing: border-box;
 }
 
 .intro__arrow {
