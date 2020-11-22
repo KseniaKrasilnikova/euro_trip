@@ -134,6 +134,8 @@ buySubmitBtn.addEventListener("click", function (evt) {
 // валидация полей формы
 var formElement = document.querySelector('.form');
 var formPhone = document.getElementById('phone');
+var formComment = document.querySelector('.form__comment');
+var formCode = document.querySelector('.form__code');
 
 function validatePhone() {
     var phoneNmbIsValid = /^\d{10}$/.test(formPhone.value);
@@ -151,5 +153,7 @@ formSubmitBtn.addEventListener('click', function (event) {
     event.preventDefault();
     if (isFormValid()) {
         showFormSuccessMessage();
+    } else {
+        formComment.classList.remove('visually-hidden');
     }
 });
