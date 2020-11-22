@@ -1,3 +1,5 @@
+$accentColor: #fe7865;
+
 .prices {
   display: flex;
   flex-direction: column;
@@ -13,35 +15,45 @@
 
 .prices__header {
   display: flex;
+  flex-direction: column;
+}
+
+.prices__title {
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+
   justify-content: space-between;
   align-items: center;
   margin: 0;
   width: 100%;
-  padding-bottom: 40px;
 
+  padding-bottom: 40px;
   color: rgba(20, 21, 23, 0.7);
 }
 
 .prices:hover,
 .prices:focus {
-  box-shadow: 0 0 0 3px #fe7865;
+  box-shadow: 0 0 0 3px $accentColor;
 
-  &:before {
+/*  &:before {
     display: none;
-  }
+  }*/
 
-  & .prices__content {
-    color: #fe7865;
+  & .prices__check {
+    color: $accentColor;
   }
 
   & .prices__check {
     fill: #141517;
   }
 
-  & .prices__rect {
-    background-color: #fe7865;
+  & .prices__name, .prices__sum {
+    color: $accentColor;
+  }
+
+  & .prices__header:after  {
+    background-color: $accentColor;
   }
 }
 
@@ -75,7 +87,8 @@
   text-align: left;
 }
 
-.prices__rect {
+.prices__header:after {
+  content: " ";
   margin-top: 26px;
   width: 310px;
   height: 1px;
@@ -90,7 +103,7 @@
 }
 
 .prices__check {
-  fill: #fe7865;
+  fill: $accentColor;
 }
 
 .prices__btn {
