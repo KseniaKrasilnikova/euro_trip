@@ -36,10 +36,6 @@ $accentColor: #fe7865;
 .prices:focus {
   box-shadow: 0 0 0 3px $accentColor;
 
-/*  &:before {
-    display: none;
-  }*/
-
   & .prices__check {
     color: $accentColor;
   }

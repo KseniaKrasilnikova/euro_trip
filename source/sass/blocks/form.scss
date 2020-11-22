@@ -64,8 +64,14 @@
   border: 1px solid rgba(44, 46, 63, 0.3);
 }
 
+.form__input--invalid {
+  border-color: #fe7865;
+}
+
 .form__label {
   margin: 9px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .form__phone {
@@ -75,4 +81,12 @@
 
 .form__mail {
   padding-left: 15px;
+}
+
+.form__comment {
+  color: #fe7865;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.63px;
+  text-align: left;
 }

@@ -39,6 +39,7 @@ document.getElementById("montenegroLink").addEventListener("click", function (ev
 document.getElementById("croatiaLink").addEventListener("click", function (evt) {
     openTab(evt, 'croatiaTab');
 });
+
 // ---- //
 
 function openCountry(evt, countryName) {
@@ -67,11 +68,10 @@ var overlaySuccess = document.querySelector(".overlay-success");
 var popupCLoseBtn = popupSuccess.querySelector(".success__close");
 var formSubmitBtn = document.querySelector(".form__btn");
 
-formSubmitBtn.addEventListener("click", function (evt) {
-    evt.preventDefault();
+var showFormSuccessMessage = function () {
     popupSuccess.classList.add("popup__show");
     overlaySuccess.classList.add("popup-overlay__show");
-});
+}
 
 var closePopup = function (evt) {
     if (evt.button === 0 || evt.key === 'Escape') {
@@ -129,4 +129,27 @@ buySubmitBtn.addEventListener("click", function (evt) {
     closePopupBuy(evt);
     popupSuccess.classList.add("popup__show");
     overlaySuccess.classList.add("popup-overlay__show");
+});
+
+// валидация полей формы
+var formElement = document.querySelector('.form');
+var formPhone = document.getElementById('phone');
+
+function validatePhone() {
+    var phoneNmbIsValid = /^\d{10}$/.test(formPhone.value);
+    if (!phoneNmbIsValid) {
+        formPhone.classList.add('form__input--invalid');
+    }
+    return phoneNmbIsValid;
+}
+
+function isFormValid() {
+    return validatePhone();
+}
+
+formSubmitBtn.addEventListener('click', function (event) {
+    event.preventDefault();
+    if (isFormValid()) {
+        showFormSuccessMessage();
+    }
 });
