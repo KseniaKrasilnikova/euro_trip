@@ -131,31 +131,29 @@ buySubmitBtn.addEventListener("click", function (evt) {
     overlaySuccess.classList.add("popup-overlay__show");
 });
 
-// валидация полей формы
-var formElement = document.querySelector('.form');
+// валидация полей формы связи
 var formPhone = document.getElementById('phone');
 var formMail = document.getElementById('mail');
 var phoneError = document.getElementById('phone-error');
 var mailError = document.getElementById('mail-error');
-var formComment = document.querySelectorAll('.form__comment');
 
-function validatePhone() {
-    var phoneNmbIsValid = /^\d{10}$/.test(formPhone.value);
+function validatePhone(inputElement, errorElement) {
+    var phoneNmbIsValid = /^\d{10}$/.test(inputElement.value);
     if (phoneNmbIsValid) {
-        formPhone.classList.remove('form__input--invalid');
-        phoneError.classList.add('visually-hidden');
-        document.getElementById("phone").blur();
+        inputElement.classList.remove('form__input--invalid');
+        inputElement.blur();
+        errorElement.classList.add('visually-hidden');
     } else {
-        formPhone.classList.add('form__input--invalid');
-        phoneError.classList.remove('visually-hidden');
-        document.getElementById("phone").blur();
+        inputElement.classList.add('form__input--invalid');
+        inputElement.blur();
+        errorElement.classList.remove('visually-hidden');
     }
     return phoneNmbIsValid;
 }
 
 function validateMail() {
     if (formMail.value === "") return true;
-    var mailIsValid = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(formMail.value);
+    var mailIsValid = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(formMail.value);
     if (!mailIsValid) {
         formMail.classList.add('form__input--invalid');
         mailError.classList.remove('visually-hidden');
@@ -165,7 +163,7 @@ function validateMail() {
 }
 
 function isFormValid() {
-    return validatePhone() && validateMail();
+    return validatePhone(formPhone, phoneError) && validateMail();
 }
 
 function resetForm() {
@@ -182,5 +180,33 @@ formSubmitBtn.addEventListener('click', function (event) {
     if (isFormValid()) {
         showFormSuccessMessage();
         resetForm();
+    }
+});
+
+// валидация полей формы купить
+var buyPhone = document.getElementById('buy-phone');
+var buyMail = document.getElementById('buy-mail');
+
+var buyPhoneError = document.getElementById('buy-phone-error');
+var buyMailError = document.getElementById('buy-mail-error');
+
+function isBuyFormValid() {
+    return validatePhone(buyPhone, buyPhoneError) && validateBuyMail();
+}
+
+function resetBuyForm() {
+    buyPhone.value = null;
+    buyMail.value = null;
+    buyPhoneError.classList.add('visually-hidden');
+    buyMailError.classList.add('visually-hidden');
+    buyPhone.classList.remove('buy__input--invalid');
+    buyMail.classList.remove('buy__input--invalid');
+}
+
+buySubmitBtn.addEventListener('click', function (event) {
+    event.preventDefault();
+    if (isBuyFormValid()) {
+        showFormSuccessMessage();
+        resetBuyForm();
     }
 });

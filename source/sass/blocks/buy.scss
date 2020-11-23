@@ -78,6 +78,10 @@ display: flex;
   border: 1px solid rgba(44, 46, 63, 0.3);
 }
 
+.buy__input--invalid {
+  border-color: #fe7865;
+}
+
 .buy__btn {
   width: 176px;
   min-height: 50px;
@@ -105,4 +109,15 @@ display: flex;
   background-color: #7d9fc5;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.buy__comment {
+  position: absolute;
+  margin-top: 3px;
+
+  color: #fe7865;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.63px;
+  text-align: left;
 }
