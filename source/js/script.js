@@ -134,26 +134,53 @@ buySubmitBtn.addEventListener("click", function (evt) {
 // валидация полей формы
 var formElement = document.querySelector('.form');
 var formPhone = document.getElementById('phone');
-var formComment = document.querySelector('.form__comment');
-var formCode = document.querySelector('.form__code');
+var formMail = document.getElementById('mail');
+var phoneError = document.getElementById('phone-error');
+var mailError = document.getElementById('mail-error');
+var formComment = document.querySelectorAll('.form__comment');
 
 function validatePhone() {
     var phoneNmbIsValid = /^\d{10}$/.test(formPhone.value);
-    if (!phoneNmbIsValid) {
+    if (phoneNmbIsValid) {
+        formPhone.classList.remove('form__input--invalid');
+        phoneError.classList.add('visually-hidden');
+        document.getElementById("phone").blur();
+    } else {
         formPhone.classList.add('form__input--invalid');
+        phoneError.classList.remove('visually-hidden');
+        document.getElementById("phone").blur();
     }
     return phoneNmbIsValid;
 }
 
+function validateMail() {
+    if (formMail.value === "") return true;
+    var mailIsValid = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(formMail.value);
+    if (!mailIsValid) {
+        formMail.classList.add('form__input--invalid');
+        mailError.classList.remove('visually-hidden');
+        document.getElementById("mail").blur();
+    }
+    return mailIsValid;
+}
+
 function isFormValid() {
-    return validatePhone();
+    return validatePhone() && validateMail();
+}
+
+function resetForm() {
+    formPhone.value = null;
+    formMail.value = null;
+    phoneError.classList.add('visually-hidden');
+    mailError.classList.add('visually-hidden');
+    formPhone.classList.remove('form__input--invalid');
+    formMail.classList.remove('form__input--invalid');
 }
 
 formSubmitBtn.addEventListener('click', function (event) {
     event.preventDefault();
     if (isFormValid()) {
         showFormSuccessMessage();
-    } else {
-        formComment.classList.remove('visually-hidden');
+        resetForm();
     }
 });
