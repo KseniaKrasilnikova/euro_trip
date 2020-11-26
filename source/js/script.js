@@ -121,21 +121,13 @@ var onSubmit = function () {
 
 buyForm.addEventListener('submit', onSubmit, true);
 
-// Модальное окно об отправке формы (.buy)
-var buySubmitBtn = popupBuy.querySelector(".buy__btn");
-
-buySubmitBtn.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    closePopupBuy(evt);
-    popupSuccess.classList.add("popup__show");
-    overlaySuccess.classList.add("popup-overlay__show");
-});
-
 // валидация полей формы связи
 var formPhone = document.getElementById('phone');
 var formMail = document.getElementById('mail');
 var phoneError = document.getElementById('phone-error');
 var mailError = document.getElementById('mail-error');
+var formInputs = document.querySelectorAll('.form__input');
+var formErrors = document.querySelectorAll('.form__comment');
 
 function validatePhone(inputElement, errorElement) {
     var phoneNmbIsValid = /^\d{10}$/.test(inputElement.value);
@@ -151,62 +143,62 @@ function validatePhone(inputElement, errorElement) {
     return phoneNmbIsValid;
 }
 
-function validateMail() {
-    if (formMail.value === "") return true;
-    var mailIsValid = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(formMail.value);
-    if (!mailIsValid) {
-        formMail.classList.add('form__input--invalid');
-        mailError.classList.remove('visually-hidden');
-        document.getElementById("mail").blur();
+function validateMail(inputElement, errorElement) {
+    if (inputElement.value === "") return true;
+    var mailIsValid = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(inputElement.value);
+    if (mailIsValid) {
+        inputElement.classList.remove('form__input--invalid');
+        inputElement.blur();
+        errorElement.classList.add('visually-hidden');
+    } else {
+        inputElement.classList.remove('form__input--invalid');
+        inputElement.blur();
+        errorElement.classList.remove('visually-hidden');
     }
     return mailIsValid;
 }
 
 function isFormValid() {
-    return validatePhone(formPhone, phoneError) && validateMail();
+    return validatePhone(formPhone, phoneError) && validateMail(formMail, mailError);
 }
 
-function resetForm() {
-    formPhone.value = null;
-    formMail.value = null;
-    phoneError.classList.add('visually-hidden');
-    mailError.classList.add('visually-hidden');
-    formPhone.classList.remove('form__input--invalid');
-    formMail.classList.remove('form__input--invalid');
+function resetForm(inputElements, errorElements) {
+    for (var i = 0; i < inputElements.length; i++) {
+        inputElements[i].value = null;
+        inputElements[i].classList.remove('form__input--invalid');
+    }
+    for (var i = 0; i < errorElements.length; i++) {
+        errorElements[i].classList.add('visually-hidden');
+    }
 }
 
 formSubmitBtn.addEventListener('click', function (event) {
     event.preventDefault();
     if (isFormValid()) {
         showFormSuccessMessage();
-        resetForm();
+        resetForm(formInputs, formErrors);
     }
 });
 
 // валидация полей формы купить
 var buyPhone = document.getElementById('buy-phone');
 var buyMail = document.getElementById('buy-mail');
-
 var buyPhoneError = document.getElementById('buy-phone-error');
 var buyMailError = document.getElementById('buy-mail-error');
+var buyFormInputs = document.querySelectorAll('.buy__input');
+var buyFormErrors = document.querySelectorAll('.buy__comment');
 
 function isBuyFormValid() {
-    return validatePhone(buyPhone, buyPhoneError) && validateBuyMail();
+    return validatePhone(buyPhone, buyPhoneError) && validateMail(buyMail, buyMailError);
 }
 
-function resetBuyForm() {
-    buyPhone.value = null;
-    buyMail.value = null;
-    buyPhoneError.classList.add('visually-hidden');
-    buyMailError.classList.add('visually-hidden');
-    buyPhone.classList.remove('buy__input--invalid');
-    buyMail.classList.remove('buy__input--invalid');
-}
-
+var buySubmitBtn = popupBuy.querySelector(".buy__btn");
 buySubmitBtn.addEventListener('click', function (event) {
     event.preventDefault();
     if (isBuyFormValid()) {
+        popupBuy.classList.remove("popup__show");
+        overlayBuy.classList.remove("popup-overlay__show");
         showFormSuccessMessage();
-        resetBuyForm();
+        resetForm(buyFormInputs, buyFormErrors);
     }
 });
