@@ -13,21 +13,23 @@
 <body>
 
 <header class="page-header container">
-    <picture>
-        <img class="page-header__logo" src="img/way.svg" alt="Company Logo" width="57" height="22">
-    </picture>
-    <nav class="main-nav">
-        <div class="main-nav__wrapper">
-            <ul class="main-nav__list nav-list">
-                <li class="nav-list__item">
-                    <a href="#places-to-visit">О путешествии</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="#prices">Цены</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="page-header__menu">
+        <picture>
+            <img class="page-header__logo" src="img/way.svg" alt="Company Logo" width="57" height="22">
+        </picture>
+        <nav class="main-nav">
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list nav-list">
+                    <li class="nav-list__item">
+                        <a href="#places-to-visit">О путешествии</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#prices">Цены</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <div class="contacts-header">
         <ul>
             <li class="contacts-header__item">
@@ -70,7 +72,7 @@
                 мест</p>
         </div>
         <ul class="places-list">
-            <li class="places-list__item">
+            <li class="places-list__item places-list__item--bottom">
                 <a href="#greece" class="places-list__link" id="greeceLink">
                     <img class="places-list__pic" src="img/greece.jpg" alt="Греция" width="350" height="430">
                     <div class="places-list__mask">
@@ -92,7 +94,7 @@
                     <div class="places-list__text">Албания</div>
                 </a>
             </li>
-            <li class="places-list__item">
+            <li class="places-list__item places-list__item--bottom">
                 <a href="#macedonia" class="places-list__link" id="macedoniaLink">
                     <img class="places-list__pic" src="img/macedonia.jpg" alt="Македония" width="350" height="430">
                     <div class="places-list__mask">
@@ -103,7 +105,7 @@
                     <div class="places-list__text">Македония</div>
                 </a>
             </li>
-            <li class="places-list__item places-list__item--frame">
+            <li class="places-list__item places-list__item--frame places-list__item--bottom">
                 <a href="#montenegro" class="places-list__link" id="montenegroLink">
                     <img src="img/montenegro.jpg" alt="Черногория" width="350" height="430">
                     <div class="places-list__mask">
@@ -331,8 +333,8 @@
                         <span class="prices__text">Экскурсии по удивительно красивым местам Европы</span>
                     </li>
                 </ul>
-                <a class="prices__btn btn popup-buy">Купить тур сейчас</a>
             </div>
+            <a class="prices__btn btn popup-buy">Купить тур сейчас</a>
         </div>
         <div class="prices">
             <div class="prices__header">
@@ -400,8 +402,8 @@
                         Экскурсии по удивительно красивым местам Европы</span>
                     </li>
                 </ul>
-                <a class="prices__btn btn popup-buy">Купить тур сейчас</a>
             </div>
+            <a class="prices__btn btn popup-buy">Купить тур сейчас</a>
         </div>
         <div class="prices-about">
             <h3 class="prices-about__title">Цены</h3>
@@ -426,7 +428,7 @@
     <section class="form-container container">
         <div class="form-container__content">
             <form class="form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data"
-                  autocomplete="off">
+                  autocomplete="off" autocapitalize="off">
                 <h4 class="form__title">У Вас остались вопросы?</h4>
                 <p class="form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
                 <div class="form__inputs">
@@ -544,7 +546,8 @@
     </div>
     <div class="buy__pic"></div>
     <div class="buy__form-container">
-        <form class="buy__form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="buy__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off"
+              autocapitalize="off">
             <h3 class="buy__title">Купить тур</h3>
             <div class="buy__inputs">
                 <div class="buy__inputs-phone">

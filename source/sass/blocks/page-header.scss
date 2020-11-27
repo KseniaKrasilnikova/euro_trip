@@ -6,6 +6,13 @@
   min-height: 99px;
 }
 
+.page-header__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .page-header__logo {
   padding-top: 10px;
 }
