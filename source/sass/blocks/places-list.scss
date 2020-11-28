@@ -76,7 +76,11 @@
 .places-list__item--bottom {
   margin-bottom: 100px;
 }
-
+.places-list__item--bottom:nth-child(4) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
 .places-list__text {
   position: absolute;
   display: flex;

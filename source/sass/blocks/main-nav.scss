@@ -1,9 +1,10 @@
 .main-nav__list {
   display: flex;
   flex-direction: row;
-  width: 228px;
+  min-width: 228px;
   justify-content: space-around;
-  padding-top: 5px;
+  margin: 0;
+  padding: 0;
 /*  @media (max-width: $mobile-width-only) {
     display: flex;
     flex-direction: column;

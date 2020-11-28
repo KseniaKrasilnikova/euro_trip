@@ -20,22 +20,26 @@
   padding: 13px 0;
 }
 
-.tab-content__rectangle {
+.tab-content__title:after {
+  content: " ";
+  display: block;
   width: 175px;
   height: 3px;
-  background-color: #fe7865;
+  margin: 15px 0;
+
+  background-color: $accentColor;
 }
 
 .tab-content__description {
+  margin: 0;
+  padding-bottom: 48px;
+  width: 375px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.47px;
-  margin: 0;
   color: rgba(44, 46, 65, 0.7);
-  padding-top: 32px;
-  padding-bottom: 48px;
-  width: 375px;
 }
 
 .tab-content__btn {

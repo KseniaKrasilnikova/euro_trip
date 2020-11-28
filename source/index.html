@@ -12,7 +12,8 @@
 </head>
 <body>
 
-<header class="page-header container">
+<header class="container">
+    <div class="page-header">
     <div class="page-header__menu">
         <picture>
             <img class="page-header__logo" src="img/way.svg" alt="Company Logo" width="57" height="22">
@@ -31,7 +32,7 @@
         </nav>
     </div>
     <div class="contacts-header">
-        <ul>
+        <ul class="contacts-header__list">
             <li class="contacts-header__item">
                 <svg class="contacts-header__icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
@@ -41,6 +42,7 @@
                 <a href="#">+7 (499) -784-684-46</a>
             </li>
         </ul>
+    </div>
     </div>
 </header>
 <main class="page-main">
@@ -148,7 +150,6 @@
         <div id="greece" class="tab-content">
             <div class="tab-content__info">
                 <h3 class="tab-content__title">Греция</h3>
-                <div class="tab-content__rectangle"></div>
                 <p class="tab-content__description">На севере Греции находится один из крупнейших комплексов
                     монастырей,
                     расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в
@@ -162,7 +163,6 @@
             <div class="tab-content__review review">
                 <div class="review__text">
                     <h4 class="review__title">Отзывы</h4>
-                    <div class="review__rectangle"></div>
                     <p class="review__description">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
                         Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах.
                         Ощущение такое, как будто стоишь на краю света!</p>
@@ -176,7 +176,6 @@
         <div id="albania" class="tab-content">
             <div class="tab-content__info">
                 <h3 class="tab-content__title">Албания</h3>
-                <div class="tab-content__rectangle"></div>
                 <p class="tab-content__description">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас
                     чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный,
                     правда
@@ -188,7 +187,6 @@
             <div class="tab-content__review review">
                 <div class="review__text">
                     <h4 class="review__title">Отзывы</h4>
-                    <div class="review__rectangle"></div>
                     <p class="review__description">Замечательный курорт, обязательно стоит посетить. В следующий раз
                         возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
                     <div class="review__author">
@@ -201,7 +199,6 @@
         <div id="macedonia" class="tab-content">
             <div class="tab-content__info">
                 <h3 class="tab-content__title">Македония</h3>
-                <div class="tab-content__rectangle"></div>
                 <p class="tab-content__description">В Македонии нашей целью будет посетить Палаошник, который
                     расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой
                     твердыни.
@@ -214,7 +211,6 @@
             <div class="tab-content__review review">
                 <div class="review__text">
                     <h4 class="review__title">Отзывы</h4>
-                    <div class="review__rectangle"></div>
                     <p class="review__description">Я бы сказал необычное старое здание. В архитектуре я не
                         разбираюсь,
                         но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота
@@ -230,7 +226,6 @@
         <div id="montenegro" class="tab-content">
             <div class="tab-content__info">
                 <h3 class="tab-content__title">Черногория</h3>
-                <div class="tab-content__rectangle"></div>
                 <p class="tab-content__description">Черногория удивит нас самым большим в Европе каньоном реки Тара,
                     который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех.
                     При
@@ -241,7 +236,6 @@
             <div class="tab-content__review review">
                 <div class="review__text">
                     <h4 class="review__title">Отзывы</h4>
-                    <div class="review__rectangle"></div>
                     <p class="review__description">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела,
                         разве что в фильмах :) Всем советую.</p>
                     <div class="review__author">
@@ -254,7 +248,6 @@
         <div id="croatia" class="tab-content">
             <div class="tab-content__info">
                 <h3 class="tab-content__title">Хорватия</h3>
-                <div class="tab-content__rectangle"></div>
                 <p class="tab-content__description">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее
                     подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных
                     удивительными нерукотворными скульптурами — сталактитами и сталагмитами — формировавшимися
@@ -266,7 +259,6 @@
             <div class="tab-content__review review">
                 <div class="review__text">
                     <h4 class="review__title">Отзывы</h4>
-                    <div class="review__rectangle"></div>
                     <p class="review__description">Мы поехали всей семьей, я, моя жена и родители. Пещера просто
                         незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально
                         даже не
@@ -407,7 +399,6 @@
         </div>
         <div class="prices-about">
             <h3 class="prices-about__title">Цены</h3>
-            <div class="prices-about__rect"></div>
             <p class="prices-about__text">
                 Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших
                 потребностей и
