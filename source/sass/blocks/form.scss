@@ -65,7 +65,7 @@
 }
 
 .form__input--invalid {
-  border-color: #fe7865;
+  border-color: $accentColor;
 }
 
 .form__label {
@@ -87,7 +87,7 @@
   position: absolute;
   margin-top: -16px;
 
-  color: #fe7865;
+  color: $accentColor;
   font-weight: 400;
   font-size: 12px;
   line-height: 14.63px;
