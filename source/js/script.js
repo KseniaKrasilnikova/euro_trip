@@ -109,7 +109,7 @@ buyCLoseBtn.addEventListener('mousedown', closePopupBuy, true);
 
 var buyBtn = document.getElementsByClassName("popup-buy");
 for (i = 0; i < buyBtn.length; i++) {
-    buyBtn[i].addEventListener('mousedown', openPopupBuy, true);
+    buyBtn[i].addEventListener('click', openPopupBuy, true);
 }
 
 // localstorage

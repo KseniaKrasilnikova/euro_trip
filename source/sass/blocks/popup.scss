@@ -1,14 +1,14 @@
 .popup {
   display: none;
 
-  position: fixed;
   z-index: 2;
   margin: 0 auto;
-  bottom: 40%;
-  left: 0;
-  right: 0;
+  position: fixed;
+  left: 43%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
-  width: 728px;
+  max-width: 728px;
   min-height: 444px;
 
   font-size: 25px;

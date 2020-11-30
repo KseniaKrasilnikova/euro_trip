@@ -43,8 +43,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  flex-grow: 1;
   max-height: 142px;
-  min-width: 129px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -61,7 +61,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 33.33%;
+  width: 33.9%;
+  box-sizing: border-box;
+  padding-left: 50px;
 }
 
 .page-footer__next:after,
@@ -101,7 +103,9 @@
 }
 
 .page-footer__info {
-  width: 32.48%;
+  width: 32.18%;
+  box-sizing: border-box;
+  padding-left: 12px;
 }
 
 .page-footer__columns {
