@@ -11,7 +11,6 @@
     <title>Путешествие по Европе</title>
 </head>
 <body>
-
 <header class="container">
     <div class="page-header">
         <div class="page-header__menu">
@@ -19,7 +18,16 @@
                 <img class="page-header__logo" src="img/way.svg" alt="Company Logo" width="57" height="22">
             </picture>
             <nav class="main-nav">
-                <div class="main-nav__wrapper">
+                <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+                    <svg class="main-nav__toggle-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 23L23 1M23 23L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="main-nav__toggle-menu" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 21H26.25V20H3.75V21ZM3.75 14.75H26.25V13.75H3.75V14.75ZM3.75 7.5V8.5H26.25V7.5H3.75Z" fill="white"/>
+                    </svg>
+                </button>
+
+                    <div class="main-nav__wrapper">
                     <ul class="main-nav__list nav-list">
                         <li class="nav-list__item">
                             <a href="#places-to-visit">О путешествии</a>
