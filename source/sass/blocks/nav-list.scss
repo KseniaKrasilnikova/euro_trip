@@ -2,6 +2,9 @@
   list-style: none;
   margin-right: 43px;
   padding: 0;
+  @media (max-width: $tablet-width-only) {
+    margin: 0;
+  }
 }
 
 .nav-list__item a {
@@ -10,6 +13,14 @@
   font-size: 14px;
   line-height: 17px;
   text-align: center;
+  @media (max-width: $tablet-width-only) {
+    display: block;
+    padding: 7px;
+
+    text-align: left;
+
+    background-color: #FBF8F8;
+  }
 }
 
 .nav-list__item a:hover,

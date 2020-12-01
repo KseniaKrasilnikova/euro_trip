@@ -22,5 +22,9 @@
 
 .contacts-header {
   margin-right: 18px;
+  @media (max-width: $tablet-width-only) {
+    display: none;
+    margin: 0;
+  }
 }
 
