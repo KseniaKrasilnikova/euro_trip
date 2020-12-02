@@ -15,6 +15,7 @@
     @media (max-width: $tablet-width-only) {
       display: flex;
       flex-direction: column;
+      margin-top: 133px;
     }
 }
 
@@ -31,7 +32,9 @@
 }
 
 .main-nav--closed .main-nav__wrapper {
-  display: none;
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
 }
 /*
 Кнопка открытия-закрытия меню
@@ -50,9 +53,11 @@
     display: none;
   }
 }
+
 .main-nav--closed .main-nav__toggle {
   background-color: $accentColor;
 }
+
 .main-nav--opened  .main-nav__toggle {
   background-color: transparent;
 }
@@ -60,9 +65,13 @@
 .main-nav__toggle-menu {
   fill: #ffffff;
 }
+
 .main-nav__toggle-cross {
+  margin-left: 22px;
+
   fill: rgba(20, 21, 23, 0.2);
 }
+
 .main-nav__toggle-cross,
 .main-nav__toggle-menu {
   &:hover {

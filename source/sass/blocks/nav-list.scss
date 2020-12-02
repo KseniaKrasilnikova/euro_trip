@@ -3,7 +3,7 @@
   margin-right: 43px;
   padding: 0;
   @media (max-width: $tablet-width-only) {
-    margin: 0;
+    margin: 0 0 30px;
   }
 }
 
@@ -15,8 +15,12 @@
   text-align: center;
   @media (max-width: $tablet-width-only) {
     display: block;
-    padding: 7px;
+    padding: 16px;
 
+    color: #48494D;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
     text-align: left;
 
     background-color: #FBF8F8;
