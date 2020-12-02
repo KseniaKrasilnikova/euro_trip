@@ -2,21 +2,24 @@
   margin-top: 201px;
 }
 
-.places__rectangle {
-  width: 228.5px;
-  height: 4px;
-  background-color: #fe7865;
-}
-
 .places__header {
+  margin: 0;
+
   font-weight: 600;
   font-size: 55px;
   line-height: 80px;
   letter-spacing: -1.25px;
   text-align: left;
+}
 
-  margin: 0;
-  padding-bottom: 28px;
+.places__header:after {
+  content: " ";
+  display: block;
+  width: 228.5px;
+  height: 4px;
+  margin-top: 28px;
+
+  background-color: $accentColor;
 }
 
 .places__title {
