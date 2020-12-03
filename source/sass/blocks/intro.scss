@@ -8,6 +8,10 @@
   @media (max-width: $tablet-width-only) {
     min-height: 344px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 235px;
+  }
 }
 
 .intro__content {
@@ -47,12 +51,14 @@
 
     letter-spacing: -1.10667px;
   }
+
   @media (max-width: $tablet-width-only) {
     padding-bottom: 15px;
 
     font-size: 30px;
     line-height: 45px;
   }
+
   @media (max-width: $mobile-width-only) {
     font-size: 24px;
     line-height: 36px;

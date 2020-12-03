@@ -1,0 +1,12 @@
+.body {
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/map.png");
+    background-repeat: no-repeat;
+    background-size: 1444px;
+    background-position-y: 2685px;
+    background-position-x: 240px;
+  }
+  @media (max-width: $tablet-width-only) {
+    background-image: none;
+  }
+}

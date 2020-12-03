@@ -10,16 +10,30 @@
   line-height: 80px;
   letter-spacing: -1.25px;
   text-align: left;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .places__header:after {
-  content: " ";
-  display: block;
-  width: 228.5px;
-  height: 4px;
-  margin-top: 28px;
+  display: none;
+  @media (min-width: $desktop-width) {
+    content: " ";
+    display: block;
+    width: 228.5px;
+    height: 4px;
+    margin-top: 28px;
 
-  background-color: $accentColor;
+    background-color: $accentColor;
+  }
 }
 
 .places__title {
@@ -35,4 +49,8 @@
   letter-spacing: -0.47px;
   text-align: left;
   color: rgba(44, 46, 65, 0.7);
+
+  @media (max-width: $tablet-width-only) {
+    text-align: center;
+  }
 }

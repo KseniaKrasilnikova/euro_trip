@@ -10,14 +10,6 @@ body {
   color: #2C2E3F;
   text-transform: none;
   background-color: #ffffff;
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/map.png");
-    background-repeat: no-repeat;
-    background-size: 1444px;
-    background-position-y: 2685px;
-    background-position-x: 240px;
-  }
 }
 
 a {

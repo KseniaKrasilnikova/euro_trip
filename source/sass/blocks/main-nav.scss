@@ -1,5 +1,4 @@
 .main-nav {
-/*  position: relative;*/
   @media (max-width: $tablet-width-only) {
     width: 320px;
   }
@@ -36,6 +35,7 @@
     display: none;
   }
 }
+
 /*
 Кнопка открытия-закрытия меню
 */
