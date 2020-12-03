@@ -1,7 +1,20 @@
-.tabs {
+.tabs__container {
   overflow: hidden;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.tabs {
+  max-width: 899px;
+}
+
+.tabs:after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(44, 46, 63, 0.3);
 }
 
 .tabs__links {
