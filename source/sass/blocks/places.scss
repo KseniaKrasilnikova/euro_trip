@@ -1,5 +1,8 @@
 .places {
   margin-top: 201px;
+  @media (max-width: $tablet-width-only) {
+    margin-top: 80px;
+  }
 }
 
 .places__header {
@@ -9,12 +12,11 @@
   font-size: 55px;
   line-height: 80px;
   letter-spacing: -1.25px;
-  text-align: left;
 
   @media (max-width: $tablet-width-only) {
     font-size: 30px;
     line-height: 45px;
-    text-align: center;
+    letter-spacing: 0;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -37,7 +39,12 @@
 }
 
 .places__title {
-  width: 328px;
+  max-width: 328px;
+  text-align: left;
+  @media (max-width: $tablet-width-only) {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .places__instruction {
@@ -47,10 +54,9 @@
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.47px;
-  text-align: left;
   color: rgba(44, 46, 65, 0.7);
 
   @media (max-width: $tablet-width-only) {
-    text-align: center;
+    margin: 21px 0;
   }
 }
