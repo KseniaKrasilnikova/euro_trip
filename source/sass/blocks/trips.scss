@@ -1,3 +1,7 @@
 .trips {
-  margin-top: 79px;
+  margin: 79px auto 0;
+  @media (min-width: $desktop-width) {
+    max-width: 1170px;
+  }
+
 }

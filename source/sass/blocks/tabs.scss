@@ -7,6 +7,9 @@
 
 .tabs {
   max-width: 899px;
+  @media (max-width: $tablet-width-only) {
+    margin-left: 38px;
+  }
 }
 
 .tabs:after {
