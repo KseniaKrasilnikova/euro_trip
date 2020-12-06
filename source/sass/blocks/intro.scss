@@ -89,6 +89,7 @@
 .intro__button {
   width: 339px;
   min-height: 74px;
+  padding: 30px 38px;
 
   display: flex;
   align-items: center;
@@ -97,6 +98,7 @@
   @media (max-width: $tablet-width-only) {
     width: 250px;
     min-height: 50px;
+    padding: 10px 40px;
   }
 
   @media (max-width: $mobile-width-only) {

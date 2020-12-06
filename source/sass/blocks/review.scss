@@ -32,13 +32,20 @@
 }
 
 .review__text {
-  max-width: 321px;
-  height: fit-content;
-  padding: 28px 30px;
+  box-sizing: border-box;
+  max-width: 382px;
+  height: 367px;
+
+  padding: 30px 30px;
   margin-left: -112px;
   margin-top: 119px;
 
   background-color: white;
+
+  @media (max-width: $tablet-width-only) {
+    margin: -336px auto 0;
+    padding: 30px 30px;
+  }
 }
 
 .review__title {
@@ -47,8 +54,8 @@
 
   font-weight: 500;
   font-size: 30px;
-  line-height: 36.6px;
-  letter-spacing: -0.7px;
+  line-height: 36.57px;
+  letter-spacing: -0.69px;
 }
 
 .review__title:after {
