@@ -1,16 +1,21 @@
 .form-container {
-  margin-top: 138px;
-  margin-bottom: 170px;
-  margin-left: 12px;
-
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  min-height: 455px;
+  height: 455px;
+  margin-top: 138px;
+  margin-bottom: 170px;
+  margin-left: 12px;
 
   background-image: url("../img/sunset.jpg");
   background-repeat: no-repeat;
+
+  @media (max-width: $tablet-width-only) {
+    height: 455.59px;
+    margin: 124px auto 80px;
+    max-width: 768px;
+  }
 }
 
 .form-container__pic {
@@ -21,4 +26,8 @@
   position: absolute;
   width: 100%;
   margin-left: 26.8%;
+  @media (max-width: $tablet-width-only) {
+    position: relative;
+    margin: 0;
+  }
 }
