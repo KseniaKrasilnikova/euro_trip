@@ -9,6 +9,13 @@
 
   box-shadow: 0 0 0 1px rgba(35, 37, 50, 0.3);
   border-radius: 6px;
+
+  @media (max-width: $tablet-width-only) {
+    max-width: 288px;
+    height: 629px;
+    padding: 0;
+
+  }
 }
 
 .prices__header {
@@ -27,6 +34,10 @@
 
   padding-bottom: 40px;
   color: rgba(20, 21, 23, 0.7);
+
+  @media (max-width: $tablet-width-only) {
+    flex-direction: column;
+  }
 }
 
 .prices:hover,
@@ -38,14 +49,14 @@
   }
 
   & .prices__check {
-    fill: #141517;
+    fill: $darkestColor;
   }
 
   & .prices__name, .prices__sum {
     color: $accentColor;
   }
 
-  & .prices__header:after  {
+  & .prices__header:after {
     background-color: $accentColor;
   }
 }
@@ -59,6 +70,12 @@
   line-height: 38px;
   text-align: left;
   letter-spacing: -1.27px;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+  }
 }
 
 .prices__sum {
@@ -67,6 +84,10 @@
   font-size: 25px;
   line-height: 34px;
   text-align: right;
+
+  @media (max-width: $tablet-width-only) {
+    text-align: center;
+  }
 }
 
 .prices__meet {
@@ -78,6 +99,10 @@
   font-size: 16px;
   line-height: 24px;
   text-align: left;
+
+  @media (max-width: $tablet-width-only) {
+    text-align: center;
+  }
 }
 
 .prices__header:after {
@@ -103,6 +128,12 @@
   max-width: 310px;
   margin-top: auto;
   padding: 30px;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 0;
+    height: 50px;
+    width: 288px;
+  }
 }
 
 .prices__items {
@@ -128,11 +159,3 @@
   margin: 0;
   padding: 32px 0 11px 0;
 }
-
-/*
-.prices__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-}*/
