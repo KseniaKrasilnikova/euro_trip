@@ -1,9 +1,15 @@
 .page-footer {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  min-height: 195px;
-  max-width: 1148px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 195px;
+    max-width: 1148px;
+  }
+  @media (max-width: $tablet-width-only) {
+    flex-direction: column;
+  }
 }
 
 .page-footer__column {
@@ -16,7 +22,7 @@
   font-size: 18px;
   line-height: 32px;
   text-align: left;
-  color: #141517;
+  color: $darkestColor;
   margin: 0 0 14px 0;
 }
 
