@@ -24,5 +24,6 @@
 
   @media (max-width: $mobile-width-only) {
     flex-direction: column;
+    width: 320px;
   }
 }
