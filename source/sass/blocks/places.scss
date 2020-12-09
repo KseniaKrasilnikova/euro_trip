@@ -3,6 +3,9 @@
   @media (max-width: $tablet-width-only) {
     margin-top: 80px;
   }
+  @media (max-width: $mobile-width-only) {
+    margin-top: 307px;
+  }
 }
 
 .places__header {
