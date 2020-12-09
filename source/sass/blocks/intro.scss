@@ -30,6 +30,10 @@
     margin: 0 auto;
     min-width: 398px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    min-width: 320px;
+  }
 }
 
 .intro__title,

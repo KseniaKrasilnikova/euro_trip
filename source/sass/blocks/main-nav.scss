@@ -11,11 +11,11 @@
   justify-content: space-around;
   margin: 0;
   padding: 0;
-    @media (max-width: $tablet-width-only) {
-      display: flex;
-      flex-direction: column;
-      margin-top: 133px;
-    }
+  @media (max-width: $tablet-width-only) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 133px;
+  }
 }
 
 .main-nav__wrapper {
@@ -52,13 +52,16 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+  @media (max-width: $mobile-width-only) {
+    width: 50px;
+  }
 }
 
 .main-nav--closed .main-nav__toggle {
   background-color: $accentColor;
 }
 
-.main-nav--opened  .main-nav__toggle {
+.main-nav--opened .main-nav__toggle {
   background-color: transparent;
 }
 

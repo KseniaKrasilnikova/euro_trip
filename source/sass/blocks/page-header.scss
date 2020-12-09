@@ -25,4 +25,7 @@
     width: 44px;
     height: 16.98px;
   }
+  @media (max-width: $mobile-width-only) {
+    margin-left: 16px;
+  }
 }
