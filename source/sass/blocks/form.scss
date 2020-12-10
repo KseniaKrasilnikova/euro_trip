@@ -7,13 +7,18 @@
   padding: 20px 20px;
   box-sizing: border-box;
 
-  background-color: white;
-  box-shadow: 4px 4px 8px -2px rgba(128, 128, 128, 0.3);
-
   @media (max-width: $tablet-width-only) {
     max-width: 658px;
     min-height: 311px;
     margin: 0 auto;
+  }
+  @media (min-width: $tablet-width) {
+    background-color: white;
+    box-shadow: 4px 4px 8px -2px rgba(128, 128, 128, 0.3);
+  }
+  @media (max-width: $mobile-width-only) {
+    padding: 20px 16px;
+    background-color: #FBF8F8;
   }
 }
 
@@ -24,6 +29,10 @@
   line-height: 32px;
   text-align: center;
   color: $darkestColor;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 20px 0 0;
+  }
 }
 
 .form__text {
@@ -43,6 +52,9 @@
   @media (max-width: $tablet-width-only) {
     width: 250px;
     margin-top: 10px;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
   }
 }
 
@@ -68,10 +80,15 @@
 .form__input {
   height: 50px;
   width: 269px;
-  font-size: 14px;
   box-sizing: border-box;
+
+  font-size: 14px;
   background-color: white;
   border: 1px solid rgba(44, 46, 63, 0.3);
+
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
+  }
 }
 
 .form__input--invalid {

@@ -8,13 +8,18 @@
   margin-bottom: 170px;
   margin-left: 12px;
 
-  background-image: url("../img/sunset.jpg");
-  background-repeat: no-repeat;
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/sunset.jpg");
+    background-repeat: no-repeat;
+  }
 
   @media (max-width: $tablet-width-only) {
     height: 455.59px;
     margin: 124px auto 80px;
     max-width: 768px;
+  }
+  @media (max-width: $mobile-width-only) {
+    margin: 0;
   }
 }
 
