@@ -19,7 +19,9 @@
   font-size: 14px;
   line-height: 28px;
   letter-spacing: -0.41px;
-
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
 }
 
 .review__name {
@@ -46,6 +48,16 @@
     margin: -336px auto 0;
     padding: 30px 30px;
   }
+  @media (max-width: $mobile-width-only) {
+    width: 268px;
+    height: 431px;
+    margin: -365px auto 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .review__title {
@@ -56,6 +68,10 @@
   font-size: 30px;
   line-height: 36.57px;
   letter-spacing: -0.69px;
+  @media (max-width: $mobile-width-only) {
+    font-size: 20px;
+    line-height: 24.38px;
+  }
 }
 
 .review__title:after {
