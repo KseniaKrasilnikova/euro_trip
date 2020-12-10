@@ -10,6 +10,9 @@
   @media (max-width: $tablet-width-only) {
     margin-left: 38px;
   }
+  @media (max-width: $mobile-width-only) {
+    margin: 0;
+  }
 }
 
 .tabs:after {

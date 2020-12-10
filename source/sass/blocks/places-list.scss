@@ -13,6 +13,9 @@
     max-width: 605px;
     justify-content: space-between;
   }
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+  }
 }
 
 .places-list__item {
@@ -99,6 +102,9 @@
   margin-bottom: 100px;
   @media (max-width: $tablet-width-only) {
     margin-bottom: 20px;
+  }
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 32px;
   }
 }
 

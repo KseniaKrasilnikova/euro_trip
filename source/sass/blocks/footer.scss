@@ -30,7 +30,7 @@
   @media (max-width: $tablet-width-only) {
     width: 100%;
   }
-  @media (max-width: $tablet-width-only) {
+  @media (max-width: $mobile-width-only) {
     flex-direction: column;
   }
 }
