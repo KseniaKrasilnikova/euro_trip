@@ -17,7 +17,19 @@
     padding: 30px 20px 0;
   }
   @media (max-width: $mobile-width-only) {
-   margin: 0 auto;
+    margin: 0 auto 30px;
+  }
+}
+
+.prices:nth-child(2) {
+  @media (max-width: $mobile-width-only) {
+    height: 629px;
+  }
+}
+
+.prices:first-child {
+  @media (max-width: $mobile-width-only) {
+    height: 614px;
   }
 }
 
