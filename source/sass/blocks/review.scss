@@ -3,6 +3,12 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: flex-start;
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
 }
 
 .review__author img {
@@ -20,6 +26,8 @@
   line-height: 28px;
   letter-spacing: -0.41px;
   @media (max-width: $mobile-width-only) {
+    padding-bottom: 6px;
+
     text-align: center;
   }
 }
@@ -31,6 +39,10 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -1.17px;
+  @media (max-width: $mobile-width-only) {
+    margin: 0;
+    padding-top: 10px;
+  }
 }
 
 .review__text {
@@ -52,6 +64,7 @@
     width: 268px;
     height: 431px;
     margin: -365px auto 0;
+    padding: 30px 20px;
 
     display: flex;
     flex-direction: column;
@@ -69,6 +82,7 @@
   line-height: 36.57px;
   letter-spacing: -0.69px;
   @media (max-width: $mobile-width-only) {
+    padding: 0;
     font-size: 20px;
     line-height: 24.38px;
   }
