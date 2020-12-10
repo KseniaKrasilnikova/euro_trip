@@ -31,7 +31,7 @@
   color: $darkestColor;
 
   @media (max-width: $mobile-width-only) {
-    margin: 20px 0 0;
+    margin: 27px 0 6px;
   }
 }
 
@@ -69,6 +69,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 557px;
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 120px;
+    max-width: 320px;
+    flex-direction: column;
+  }
 }
 
 .form__code {
@@ -104,6 +110,9 @@
 .form__phone {
   padding-left: 52px;
   margin-right: 19px;
+  @media (max-width: $mobile-width-only) {
+    margin: 0;
+  }
 }
 
 .form__mail {
