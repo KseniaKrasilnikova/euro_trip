@@ -1,3 +1,15 @@
+.intro {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 494px;
+  }
+  @media (max-width: $tablet-width-only) {
+    margin-bottom: 165px;
+  }
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 0;
+  }
+}
+
 .intro__bg {
   background-image: url("../img/bg-back-desktop.jpg");
   background-repeat: no-repeat;
@@ -23,23 +35,23 @@
   margin-left: 55.83%;
   margin-right: 7.69%;
 
+  @media (min-width: $desktop-width) {
+    margin: -860px 0 0 0;
+    left: 55.8%;
+    position: relative;
+  }
   @media (max-width: $tablet-width-only) {
     align-items: center;
-
     padding-top: 60px;
-    margin: 0 auto;
+    margin: -345px auto 0;
     min-width: 398px;
   }
 
   @media (max-width: $mobile-width-only) {
-    position: absolute;
-    top: 31.7%;
-    transform: translate(0, -50%);
-    left: 0;
-    right: 0;
     min-width: 320px;
     height: 352px;
     padding-top: 82px;
+    margin-top: -235px;
   }
 }
 
