@@ -15,7 +15,7 @@
 
   @media (max-width: $tablet-width-only) {
     height: 455.59px;
-    margin: 124px auto 80px;
+    margin: 120px auto 80px;
     max-width: 768px;
   }
   @media (max-width: $mobile-width-only) {
@@ -29,10 +29,12 @@
 
 .form-container__content {
   position: absolute;
-  width: 100%;
-  margin-left: 26.8%;
+  width: 656px;
+  margin: 0 0 0 26.8%;
   @media (max-width: $tablet-width-only) {
     position: relative;
-    margin: 0;
+    margin: 0 auto;
+    width: 658px;
+
   }
 }
