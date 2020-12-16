@@ -88,7 +88,12 @@
             <ul class="places-list">
                 <li class="places-list__item places-list__item--bottom">
                     <a href="#greece" class="places-list__link" id="greeceLink">
-                        <img class="places-list__pic" src="img/greece.jpg" alt="Греция" width="350" height="430">
+                        <picture class="places-list__pic-container">
+                            <source media="(min-width: 1024px)" srcset="img/greece-desktop.jpg">
+                            <source media="(min-width: 768px)" srcset="img/greece-tablet.jpg">
+                            <img class="places-list__pic" src="img/greece-mobile.jpg" alt="Греция" width="288"
+                                 height="425">
+                        </picture>
                         <div class="places-list__mask">
                             <div class="places-list__frame">
                                 <p class="places-list__details">Смотреть побробнее</p>
@@ -99,7 +104,12 @@
                 </li>
                 <li class="places-list__item places-list__item--frame places-list__item--bottom">
                     <a href="#albania" class="places-list__link" id="albaniaLink">
-                        <img class="places-list__pic" src="img/albania.jpg" alt="Албания" width="350" height="430">
+                        <picture class="places-list__pic-container">
+                            <source media="(min-width: 1024px)" srcset="img/albania-desktop.jpg">
+                            <source media="(min-width: 768px)" srcset="img/albania-tablet.jpg">
+                            <img class="places-list__pic" src="img/albania-mobile.jpg" alt="Албания" width="288"
+                                 height="425">
+                        </picture>
                         <div class="places-list__mask">
                             <div class="places-list__frame">
                                 <p class="places-list__details">Смотреть побробнее</p>
@@ -110,7 +120,12 @@
                 </li>
                 <li class="places-list__item places-list__item--bottom">
                     <a href="#macedonia" class="places-list__link" id="macedoniaLink">
-                        <img class="places-list__pic" src="img/macedonia.jpg" alt="Македония" width="350" height="430">
+                        <picture class="places-list__pic-container">
+                            <source media="(min-width: 1024px)" srcset="img/macedonia-desktop.jpg">
+                            <source media="(min-width: 768px)" srcset="img/macedonia-tablet.jpg">
+                            <img class="places-list__pic" src="img/macedonia-mobile.jpg" alt="Македония" width="288"
+                                 height="425">
+                        </picture>
                         <div class="places-list__mask">
                             <div class="places-list__frame">
                                 <p class="places-list__details">Смотреть побробнее</p>
@@ -121,7 +136,12 @@
                 </li>
                 <li class="places-list__item places-list__item--frame places-list__item--bottom">
                     <a href="#montenegro" class="places-list__link" id="montenegroLink">
-                        <img src="img/montenegro.jpg" alt="Черногория" width="350" height="430">
+                        <picture class="places-list__pic-container">
+                            <source media="(min-width: 1024px)" srcset="img/montenegro-desktop.jpg">
+                            <source media="(min-width: 768px)" srcset="img/montenegro-tablet.jpg">
+                            <img class="places-list__pic" src="img/montenegro-mobile.jpg" alt="Черногория" width="288"
+                                 height="425">
+                        </picture>
                         <div class="places-list__mask">
                             <div class="places-list__frame">
                                 <p class="places-list__details">Смотреть побробнее</p>
@@ -132,7 +152,12 @@
                 </li>
                 <li class="places-list__item places-list__item--frame">
                     <a href="#croatia" class="places-list__link" id="croatiaLink">
-                        <img src="img/croatia.jpg" alt="Хорватия" width="350" height="430">
+                        <picture class="places-list__pic-container">
+                            <source media="(min-width: 1024px)" srcset="img/croatia-desktop.jpg">
+                            <source media="(min-width: 768px)" srcset="img/croatia-tablet.jpg">
+                            <img class="places-list__pic" src="img/croatia-mobile.jpg" alt="Хорватия" width="288"
+                                 height="425">
+                        </picture>
                         <div class="places-list__mask">
                             <div class="places-list__frame">
                                 <p class="places-list__details">Смотреть побробнее</p>
@@ -173,7 +198,9 @@
                     <a class="tab-content__btn btn popup-buy" href="#">Купить тур сейчас</a>
                 </div>
                 <div class="tab-content__pic">
-                    <img src="img/greece-review.jpg" alt="Греция" width="430" height="596">
+                    <picture class="places-list__pic-container">
+                        <img src="img/greece-review.jpg" alt="Греция" width="430" height="596">
+                    </picture>
                 </div>
                 <div class="tab-content__review review">
                     <div class="review__text">
@@ -601,6 +628,7 @@
     </div>
     <!--</template>-->
 </div>
+<script src="js/picturefill.js"></script>
 <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>

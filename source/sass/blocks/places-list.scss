@@ -9,7 +9,7 @@
 
   @media (max-width: $tablet-width-only) {
     padding: 0;
-    margin: 40px auto 0;
+    margin: 38px auto 0;
     max-width: 605px;
     justify-content: space-between;
   }
@@ -36,6 +36,13 @@
     margin: 0 auto;
     padding-top: 10px;
   }
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+  }
+}
+
+.places-list__pic-container {
+  display: flex;
 }
 
 .places-list__pic {
@@ -104,7 +111,7 @@
     margin-bottom: 20px;
   }
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
 }
 
@@ -122,7 +129,7 @@
   z-index: 1;
   margin: 0;
   width: 215px;
-  height: 62px;
+  height: 63px;
 
   font-weight: 500;
   font-size: 24px;
@@ -130,4 +137,8 @@
   text-align: center;
 
   background-color: white;
+
+  @media (max-width: $tablet-width-only) {
+    height: 61px;
+  }
 }

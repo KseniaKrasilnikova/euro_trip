@@ -11,18 +11,25 @@
 }
 
 .intro__bg {
-  background-image: url("../img/bg-back-desktop.jpg");
-  background-repeat: no-repeat;
-  min-height: 860px;
   background-size: cover;
   background-color: #7d9fc5;
+  background-repeat: no-repeat;
+
+  @media (min-width: $desktop-width) {
+    min-height: 860px;
+  }
 
   @media (max-width: $tablet-width-only) {
     min-height: 344px;
   }
 
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bg-back-desktop.jpg");
+  }
+
   @media (max-width: $mobile-width-only) {
     min-height: 235px;
+    background-image: url("../img/bg-back-mobile.jpg");
   }
 }
 
