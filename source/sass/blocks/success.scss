@@ -24,8 +24,13 @@
   background: transparent;
 }
 
+.success__close svg {
+  stroke: #141517;
+  stroke-opacity: 0.2;
+  fill: none;
+}
 
-.success__close-cross:hover,
-.success__close-cross:focus {
+.success__close svg:hover,
+.success__close svg:focus {
   stroke-opacity: 100%;
 }

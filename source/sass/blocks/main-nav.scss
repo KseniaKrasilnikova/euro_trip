@@ -70,23 +70,25 @@
 }
 
 .main-nav__toggle-menu {
-  fill: #ffffff;
+  stroke: white;
+  fill: none;
 }
 
 .main-nav__toggle-cross {
   margin-left: 22px;
-
-  fill: rgba(20, 21, 23, 0.2);
+  stroke: #141517;
+  stroke-opacity: 0.2;
+  fill: none;
 }
 
 .main-nav__toggle-cross,
 .main-nav__toggle-menu {
   &:hover {
-    fill-opacity: 0.6;
+    stroke-opacity: 0.6;
   }
 
   &:active {
-    fill-opacity: 0.3;
+    stroke-opacity: 0.3;
   }
 }
 
@@ -106,20 +108,22 @@ no-JS
     display: none;
   }
 }
+
 .main-nav--nojs .main-nav__wrapper {
   @media (max-width: $tablet-width-only) {
     display: block;
   }
 }
+
 @media (max-width: $tablet-width-only) {
   .main-nav--nojs .main-nav__list {
     display: block;
   }
 }
 
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
-  }
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
 
 .main-nav--nojs .nav-list__item {
   display: block;

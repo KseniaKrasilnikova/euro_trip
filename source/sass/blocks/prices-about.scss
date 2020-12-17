@@ -142,6 +142,8 @@
 }
 
 .prices-about__icon {
+  fill: none;
+  stroke: $accentColor;
   @media (max-width: $tablet-width-only) {
     display: none
   }

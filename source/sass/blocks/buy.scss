@@ -104,8 +104,14 @@ display: flex;
   }
 }
 
-.buy__close-cross:hover,
-.buy__close-cross:focus {
+.buy__close svg {
+  stroke: #141517;
+  stroke-opacity: 0.2;
+  fill: none;
+}
+
+.buy__close svg:hover,
+.buy__close svg:focus {
   stroke-opacity: 100%;
 }
 
